@@ -28,7 +28,7 @@
 |---|---|---|---|---|
 | MT-0001 | Khi câu hỏi nhỏ thành lời trách | 1.png | **`da-dang`** 03/10 19:30 (chủ xác nhận) | [tap/MT-0001.md](tap/MT-0001.md) |
 | MT-0002 | Có chìa khóa, có nên tự vào? (I03) | 2.png | **`da-hen-lich` 04/10 19:30** (làm ở lượt chạy thử 03/10) | [tap/MT-0002.md](tap/MT-0002.md) |
-| MT-0003 | Ai phải nhớ mọi việc trong nhà? (I02) | 3.png | **`co-clip` (60 credit, còn 870)** — hậu kỳ, hẹn 05/10 19:30 | [tap/MT-0003.md](tap/MT-0003.md) |
+| MT-0003 | Ai phải nhớ mọi việc trong nhà? (I02) | 3.png | **`qa-xong` (60 credit, còn 870)** — chờ hẹn 05/10 19:30 | [tap/MT-0003.md](tap/MT-0003.md) |
 
 ## Tài nguyên đã biết
 - Flow: tài khoản **MINH THƯ (trinhthu.hbl@gmail.com)**, gói PRO; 1.050 → ~990 sau MT-0001 → ước ~930 sau MT-0002 (chưa đối chiếu số dư). Giá thật Omni 1.1 Flash 10 s = **15 credit**. Giới hạn 80/tập. Còn đủ ~16 tập.
