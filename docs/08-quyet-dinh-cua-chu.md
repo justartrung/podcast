@@ -40,3 +40,8 @@ Quyết định ở đây **ưu tiên hơn** mọi tài liệu trong `ban-sao-go
 5. **Claude là đầu não duy nhất**, thay Codex điều phối toàn bộ (trả lời Q5). Không chạy song song Codex trên cùng tài khoản để tránh đăng trùng/tiêu credit trùng.
 
 Các luật khác vẫn giữ: ≤ 80 credit/tập gồm tạo lại, không mua credit, thấy giá thật mới tạo, QA đủ bằng chứng trước khi đăng, chống đăng trùng, chỉ chuyện gia đình, không lời chào, không sửa thư mục gốc D:.
+
+## 04/10/2026 01:19 — GitHub do chủ nhắn Claude push
+> "à thôi, khi nào lịch nào đó set up được đăng lên thì tôi sẽ nhắn cho bạn để bạn push lên github"
+- Không gắn repo vào tác vụ 13:47. Tác vụ vẫn commit theo mốc trong phiên của nó; push 403 → lưu `git bundle` vào `D:\PODCAST VAN HANH\bang-chung\` (docs/13 mục 6).
+- Khi chủ nhắn (sau khi một tập đã hẹn lịch), phiên Claude có quyền push: nạp các bundle chưa push (fast-forward) → push main; nếu không có bundle thì đối chiếu Business Suite Scheduled + file trên D: rồi ghi bù.
