@@ -1,7 +1,7 @@
 # STATUS — Trạng thái hiện tại
 
 > **Đọc file này đầu tiên mỗi phiên.** Cập nhật cuối mỗi phiên.
-> Cập nhật lần cuối: **2026-10-04 00:12 (+07:00)** — Claude, phiên 1.
+> Cập nhật lần cuối: **2026-10-04 01:30 (+07:00)** — Claude, lượt tự động (MT-0003).
 
 ## Tổng quan
 | Mục | Giá trị |
@@ -15,7 +15,7 @@
 | Tool video | Flow `…/project/f37b741b-b3f2-40f8-b490-f23f79b098ed/tool/6dae8db1-89cf-475a-9412-3334f68ebfdd` |
 | Thư mục ghi | `D:\PODCAST VAN HANH` (`docs/10`). Mọi tải về để ổ D (ổ C đầy) |
 | Duyệt đăng | MT-0001 chủ đã duyệt (18:11). Từ tập sau Claude tự duyệt & hẹn đăng |
-| Tập đã đăng (bởi Claude) | **1** — MT-0001 03/10 19:30 (Reel, Public), chủ xác nhận đã lên. Đã hẹn: MT-0002 04/10 19:30 |
+| Tập đã đăng (bởi Claude) | **1** — MT-0001 03/10 19:30 (Reel, Public), chủ xác nhận đã lên. Đã hẹn: MT-0002 04/10 19:30, MT-0003 05/10 19:30 |
 
 ## Đang chặn (blockers)
 1. ✅ Đã gỡ: tải video lên Facebook bằng Claude in Chrome (chặn hộp thoại + `file_upload` từ file đã stage) — `docs/13` bước 4.2. Lượt chạy thật đầu tiên: 04/10 13:47. Điều kiện: máy bật, app Claude mở, **cửa sổ Chrome PODCAST mở**.
@@ -28,7 +28,7 @@
 |---|---|---|---|---|
 | MT-0001 | Khi câu hỏi nhỏ thành lời trách | 1.png | **`da-dang`** 03/10 19:30 (chủ xác nhận) | [tap/MT-0001.md](tap/MT-0001.md) |
 | MT-0002 | Có chìa khóa, có nên tự vào? (I03) | 2.png | **`da-hen-lich` 04/10 19:30** (làm ở lượt chạy thử 03/10) | [tap/MT-0002.md](tap/MT-0002.md) |
-| MT-0003 | Ai phải nhớ mọi việc trong nhà? (I02) | 3.png | **`qa-xong` (60 credit, còn 870)** — chờ hẹn 05/10 19:30 | [tap/MT-0003.md](tap/MT-0003.md) |
+| MT-0003 | Ai phải nhớ mọi việc trong nhà? (I02) | 3.png | **`da-hen-lich` (60 credit, còn 870)** — hẹn 05/10 19:30 | [tap/MT-0003.md](tap/MT-0003.md) |
 
 ## Tài nguyên đã biết
 - Flow: tài khoản **MINH THƯ (trinhthu.hbl@gmail.com)**, gói PRO; 1.050 → ~990 sau MT-0001 → ước ~930 sau MT-0002 (chưa đối chiếu số dư). Giá thật Omni 1.1 Flash 10 s = **15 credit**. Giới hạn 80/tập. Còn đủ ~16 tập.
@@ -36,8 +36,8 @@
 - Hậu kỳ: `D:\PODCAST VAN HANH\cong-cu\hauky.py` (bản sao `cong-cu/hauky.py`): analyze → cut → asr → srt → render. FFmpeg 4.4.2 (shell Linux) + faster-whisper trên D:.
 
 ## Việc tiếp theo
-1. Lượt tự động kế tiếp làm **MT-0003** (ảnh 3, ý I02 hoặc I04), hẹn **05/10 19:30** (04/10 19:30 đã có MT-0002). Lượt sau nữa → MT-0004, 06/10.
-2. Ghi permalink + số liệu MT-0001 (Content → Published).
+1. Lượt kế tiếp làm **MT-0004** (ảnh 4, ý I04), hẹn **06/10 19:30**. Flow còn ~870 credit (còn ~14 tập).
+2. Số liệu MT-0001 đã ghi (reach 217, views 271 sau ~6 giờ); permalink chưa lấy.
 3. Còn chờ: Q4 (repo private?), Q7 (TikTok/YT).
 
 ## Lịch sử phiên

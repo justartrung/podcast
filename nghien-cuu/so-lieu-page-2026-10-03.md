@@ -20,3 +20,7 @@ Nguồn: Meta Business Suite → Content → Published (90 ngày). Tất cả l�
 - Thời gian xem TB 5–15 s trên video 30–76 s → **3 giây đầu và câu hook quyết định**; nên đặt xung đột ngay câu đầu, video 30–45 s.
 - Khung 18:00–20:00 không khác biệt rõ; giữ 19:30 theo chủ.
 - **Hai chủ đề trong hàng chờ cũ (MT-0001, MT-0002) đã được đăng** 30/09 và 01/10. MT-0001 bản mới vẫn đăng 03/10 19:30 theo quyết định chủ (chấp nhận lặp chủ đề). MT-0002 cũ **hủy**, dùng ý mới.
+
+## Cập nhật 04/10/2026 ~01:25 (+07) — Business Suite → Published (nhãn: số liệu thật từ Meta, chụp sớm sau đăng ~6 giờ)
+- **MT-0001** (Reel, đăng 03/10 19:30): reach 217, views 271, viewers 214, tương tác 1 (1 reaction), 3-second views 78, thời gian xem TB 6 s.
+- Bài 01/10 19:30 (cũ): reach 272, views 308. Bài 30/09 18:16: reach 470, views 556.
