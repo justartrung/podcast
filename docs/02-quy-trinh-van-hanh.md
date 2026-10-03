@@ -9,7 +9,7 @@
                                                                                        │
  [9] BÁO CHỦ ◄── [8] XÁC MINH ◄── [7] ĐĂNG ◄────────── [6] CLAUDE DUYỆT & CHỐT (QA) ◄──┘
   tóm tắt +        permalink,        Page đúng,             quality gate đủ bằng chứng
-  link bài         phát được         19:30 VN                 gắn SHA-256 master
+  link bài         phát được         giờ theo lệnh            gắn SHA-256 master
 ```
 
 Mỗi mũi tên chỉ đi tiếp khi bước trước **có bằng chứng thật**. Lỗi → sửa đúng chỗ, tối đa 1 lần thử lại, rồi dừng và báo.
