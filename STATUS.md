@@ -10,7 +10,7 @@
 | Cách chạy | **Tự làm + đăng 1 tập/ngày, hẹn 19:30** (chủ quyết 03/10 18:11). Quy trình: `docs/13-quy-trinh-hang-ngay.md`. Làm được 3–4 tập/ngày → hỏi chủ; thừa → xếp ngày sau |
 | STOP | Tắt |
 | Lịch tự động | Scheduled task **`trig_016kmh28YVBq6Egve1K2mdny`** — mỗi ngày **13:47** (giờ VN), model Sonnet 5.5, tự duyệt; làm 1 tập + hẹn đăng 19:30; cần máy bật, app Claude mở, Flow/FB còn đăng nhập. Lần đầu: 04/10 13:47 |
-| Cài đặt chạy không hỏi phép (`docs/13`) | ✅ B1 Allow thư mục · ✅ B2 Downloads → `D:\PODCAST VAN HANH\tai-ve` (Claude kiểm 23:50: file cũ đã chuyển sang) · ⏳ B3 Claude in Chrome (23:50 chưa thấy trình duyệt nào kết nối) · ⏳ B4 luôn cho phép site |
+| Cài đặt chạy không hỏi phép (`docs/13`) | ✅ B1 Allow thư mục · ✅ B2 Downloads → `D:\PODCAST VAN HANH\tai-ve` (Claude kiểm 23:50: file cũ đã chuyển sang) · ⏳ B3 Claude in Chrome (23:50 chưa thấy trình duyệt nào kết nối) · ✅ B4 luôn cho phép site (chủ báo 23:46) |
 | Giai đoạn hiện tại | **5 — vận hành hằng ngày**. MT-0001 đã lên Page 03/10 19:30 |
 | Tool video | Flow `…/project/f37b741b-b3f2-40f8-b490-f23f79b098ed/tool/6dae8db1-89cf-475a-9412-3334f68ebfdd` |
 | Thư mục ghi | `D:\PODCAST VAN HANH` (`docs/10`). Mọi tải về để ổ D (ổ C đầy) |
@@ -35,7 +35,7 @@
 - Hậu kỳ: `D:\PODCAST VAN HANH\cong-cu\hauky.py` (bản sao `cong-cu/hauky.py`): analyze → cut → asr → srt → render. FFmpeg 4.4.2 (shell Linux) + faster-whisper trên D:.
 
 ## Việc tiếp theo
-1. Chủ: cài Claude in Chrome + đăng nhập FB trong Chrome (B3); chọn "luôn cho phép" site trong trình duyệt app Claude (B4).
+1. Chủ: cài Claude in Chrome + đăng nhập FB trong Chrome (B3) — bước duy nhất còn thiếu để đăng tự động hoàn toàn.
 2. 04/10 13:47: lượt tự động làm MT-0002 (ý I03, ảnh 2) theo `docs/13`, hẹn 19:30; trước đó kiểm Scheduled/Drafts xem lượt chạy thử 03/10 có để lại bài/clip MT-0002 không (không tạo trùng, không tiêu credit lại).
 3. Ghi permalink + số liệu MT-0001 (Content → Published).
 4. Còn chờ: Q4 (repo private?), Q7 (TikTok/YT).

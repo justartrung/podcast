@@ -3,7 +3,7 @@
 Áp dụng từ 04/10/2026 theo quyết định chủ 03/10 18:11–18:21 (`docs/08`). Mỗi ngày một phiên (scheduled task hoặc chủ ra lệnh) làm **trọn 1 tập** và **hẹn đăng 19:30 cùng ngày** (nếu đã quá 19:10 thì hẹn 19:30 ngày kế tiếp còn trống).
 
 ## Chạy không hỏi phép — cài đặt một lần (chủ làm)
-Chế độ tự duyệt của tác vụ KHÔNG bỏ qua được quyền thư mục/xóa file của Windows và quyền mở trang của trình duyệt. Để lượt 13:47 không dừng (tình trạng 03/10 23:50: **B1 ✅, B2 ✅**, B3–B4 chờ chủ):
+Chế độ tự duyệt của tác vụ KHÔNG bỏ qua được quyền thư mục/xóa file của Windows và quyền mở trang của trình duyệt. Để lượt 13:47 không dừng (tình trạng 03/10 23:50: **B1 ✅, B2 ✅, B4 ✅**, B3 chờ chủ):
 1. Lần đầu tác vụ hỏi **"Allow this scheduled task to access this folder on every run?"** cho `D:\PODCAST TU DONG`, `D:\PODCAST VAN HANH` (và Downloads) → bấm **Allow** (nhớ cho mọi lần sau).
 2. **Chuyển thư mục Downloads của Windows sang ổ D**: File Explorer → chuột phải *Downloads* → Properties → tab **Location** → nhập `D:\PODCAST VAN HANH\tai-ve` → Move → Yes. (Ổ C nhẹ hơn; Claude không cần xin quyền xóa ở ổ C.)
 3. Cài **Claude in Chrome**, đăng nhập Facebook trong Chrome, cho phép tiện ích chạy trên `business.facebook.com` (luôn cho phép).
