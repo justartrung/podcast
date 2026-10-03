@@ -2,6 +2,19 @@
 
 Quyết định ở đây **ưu tiên hơn** mọi tài liệu trong `ban-sao-goc/` (hệ thống Codex 30/09). Trích nguyên văn, có ngày giờ.
 
+## 2026-10-03 18:11–18:21 — Duyệt MT-0001; đăng bài trên Page; tự làm + đăng 1 tập/ngày 19:30
+> "duyệt , bạn mở facebook trên app claude và bảo mình đăng nhập bằng tay , sau đó tạo caption và set lịch đăng ( lúc 19h30 hằng ngày)"
+> "hẹn đăng qua meta business suite( trên facebook) , tự làm + đăng 1 tập/ngày ( lịch 19:30). Trong trường hợp 1 ngày làm được 3,4 cái video thì hỏi chính tôi nếu muôn đăng tất cả lên hay vẫn đăng 1 video/ngày. Nếu đăng 1 video/ngày và vẫn thừa mấy video còn lại thì đăng dồn ngày hôm sau. Tôi đã đăng nhập facebook rồi"
+> "tôi bảo tạo bài đăng trên trang chứ không phải chỉ một mình reel, vì khi tạo bài đăng trên trang thì có option đăng lên reel luôn"
+
+**Áp dụng (thay quyết định 17:00 về lịch):**
+1. **MT-0001 đã được chủ duyệt** → hẹn đăng 19:30 hôm nay.
+2. **Cách đăng:** Meta Business Suite → **Create post** (bài viết trên Page, KHÔNG dùng "Create reel" riêng) → bật tùy chọn chia sẻ thành Reel nếu có → **Schedule** (Set date and time).
+3. **Lịch hằng ngày:** Claude **tự làm + đăng 1 tập/ngày, hẹn 19:30** (giờ VN).
+4. Nếu trong 1 ngày làm được 3–4 video → **hỏi chủ**: đăng tất cả hay vẫn 1 video/ngày.
+5. Nếu 1 video/ngày mà còn thừa video → **xếp sang các ngày sau**, mỗi ngày 1 bài lúc 19:30 ("đăng dồn ngày hôm sau" = hàng chờ, không đăng nhiều bài cùng ngày).
+6. Chủ tự đăng nhập Facebook bằng tay trong trình duyệt app Claude (đã làm 18:15).
+
 ## 2026-10-03 17:12 — Tool video, nơi lưu, FFmpeg, duyệt tập đầu
 > "https://flow.google.com/project/f37b741b-b3f2-40f8-b490-f23f79b098ed/tool/6dae8db1-89cf-475a-9412-3334f68ebfdd Đây là link dự án làm video podcast, khi bạn mở flow tôi sẽ đăng nhập vào bằng gmail…"
 > "Video làm ra khi có phụ đề và cắt dựng ffmeg sẽ được lưu ở ổ D (bạn tự đặt tên thư mục), sau khi video được lưu trên ổ D … sẽ được đăng tự động lên facebook (cũng do tự bạn làm)."
