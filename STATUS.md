@@ -18,7 +18,7 @@
 
 ## Đang chặn (blockers)
 1. **Tải video lên Facebook cần chọn file trong hộp thoại Windows** — trình duyệt app Claude không tự chọn được; điều khiển máy tính không với tới hộp thoại của app Claude. Hướng giải: chủ cài **Claude in Chrome** + đăng nhập Facebook trong Chrome → Claude dùng `file_upload` (≤ 10 MB/file). Tạm thời: nhờ chủ chọn file mỗi ngày.
-2. Sau 19:30 hôm nay: xác minh MT-0001 đã lên Page.
+2. **Chưa xác minh MT-0001 đã lên Page**: lúc 19:41 máy chủ mất kết nối với phiên Claude → kiểm lại ở phiên 04/10 (hoặc chủ xem Page).
 
 ⚠️ Page **đã có** bài cùng chủ đề MT-0001 (30/09) và MT-0002 cũ (01/10) do Codex/chủ đăng trước. Chủ chọn vẫn đăng MT-0001 bản mới. MT-0002 cũ hủy. Số liệu: `nghien-cuu/so-lieu-page-2026-10-03.md`.
 
