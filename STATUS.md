@@ -38,7 +38,9 @@
 ## Việc tiếp theo
 1. Lượt kế tiếp làm **MT-0004** (ảnh 4, ý I04), hẹn **06/10 19:30**. Flow còn ~870 credit (còn ~14 tập).
 2. Số liệu MT-0001 đã ghi (reach 217, views 271 sau ~6 giờ); permalink chưa lấy.
-3. Còn chờ: Q4 (repo private?), Q7 (TikTok/YT).
+3. **Tác vụ 13:47 không push được GitHub** (403: phiên tác vụ không có repo `justartrung/podcast`, không có công cụ add_repo). Chủ cần thêm repo vào nguồn của tác vụ. Tạm thời: tác vụ lưu `git bundle` vào `D:\PODCAST VAN HANH\bang-chung\`; phiên có quyền push nạp bundle rồi push (đã làm 04/10 01:15 với `podcast-MT-0003-chua-push.bundle` → 44a03c9).
+4. **Downloads:** Windows đã chuyển Location sang `tai-ve` (file cũ đã sang) nhưng app Claude vẫn tải vào `C:\Users\ADMIN\Downloads` (5 clip MT-0003 còn ở đó) → khởi động lại app Claude để nhận đường dẫn mới. Chủ dọn 5 file .mp4 ở C.
+5. Còn chờ: Q4 (repo private?), Q7 (TikTok/YT).
 
 ## Lịch sử phiên
 - 2026-10-03: Khởi tạo repo; chủ quyết định bỏ cổng pilot, chạy theo lệnh, Claude thay Codex → [nhat-ky/2026-10-03.md](nhat-ky/2026-10-03.md)

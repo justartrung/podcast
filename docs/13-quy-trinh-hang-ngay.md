@@ -80,4 +80,5 @@ Meta Business Suite `https://business.facebook.com/latest/composer/?asset_id=123
 Content → Published: kiểm bài đã đăng, ghi số liệu vào `nghien-cuu/so-lieu-page-*.md`, cập nhật trạng thái `da-dang-xac-minh`.
 
 ## 6. Báo chủ + GitHub
-Báo theo `templates/bao-cao-tap.md`. Cập nhật STATUS, tap, nhật ký, commit + push.
+Báo theo `templates/bao-cao-tap.md`. Cập nhật STATUS, tap, nhật ký, commit + push **theo từng mốc**.
+- Push bị 403 (phiên không có repo/quyền push): thử lại 1 lần, rồi `git bundle create "$HOME/mnt/PODCAST VAN HANH/bang-chung/podcast-MT-xxxx-chua-push.bundle" main` và báo chủ. Phiên sau có quyền push: `device_stage_files` bundle → `git fetch <bundle> 'refs/heads/*:refs/remotes/bundle/*'` → kiểm fast-forward → `git merge --ff-only bundle/main` → push.
