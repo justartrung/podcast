@@ -20,6 +20,7 @@ Repo quản lý dự án podcast chuyện gia đình, host AI **MINH THƯ**, đ�
 | Lỗi đã biết & cách xử lý (lỗi tab Flow) | [docs/09-loi-da-biet.md](docs/09-loi-da-biet.md) |
 | Thư mục làm việc `D:\PODCAST VAN HANH` | [docs/10-thu-muc-van-hanh.md](docs/10-thu-muc-van-hanh.md) |
 | Tool Flow PODCAST: giao diện, mã, giá | [docs/11-tool-flow-podcast.md](docs/11-tool-flow-podcast.md) |
+| Thêm / thay ảnh host | [docs/12-them-anh-host.md](docs/12-them-anh-host.md) · bảng ảnh [host/](host/) |
 | Các tập | [tap/](tap/) |
 | Research & kho ý tưởng | [nghien-cuu/](nghien-cuu/) |
 | Góp ý sửa hệ thống gốc | [de-xuat/](de-xuat/) |
