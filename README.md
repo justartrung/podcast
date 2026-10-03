@@ -1,7 +1,7 @@
 # 🎙️ Podcast tự động — "Chuyện đời cùng Minh Thư"
 
 Repo quản lý dự án podcast chuyện gia đình, host AI **MINH THƯ**, đăng chính trên Facebook Page [Chuyện đời cùng Minh Thư](https://www.facebook.com/chuyendoicungminhthu).
-**Claude** là đầu não điều phối duy nhất (thay Codex từ 03/10/2026). **Chạy theo lệnh của chủ**, mỗi lệnh một tập: tìm nội dung viral → chốt → kịch bản → giao tool tạo video → hậu kỳ → duyệt → đăng → xác minh → báo chủ. Lô nhiều tập chỉ khi chủ yêu cầu.
+**Claude** là đầu não điều phối duy nhất (thay Codex từ 03/10/2026). **Tự làm + đăng 1 tập/ngày lúc 19:30**: tìm nội dung viral → chốt → kịch bản → giao tool tạo video → hậu kỳ → duyệt → đăng → xác minh → báo chủ. Lô nhiều tập chỉ khi chủ yêu cầu.
 
 > Dữ liệu gốc (ảnh host, công cụ, bằng chứng) nằm trên máy chủ tại `D:\PODCAST TU DONG` và **không bị chỉnh sửa**. Repo này giữ kế hoạch, trạng thái, góp ý và bản sao văn bản để mọi phiên chat mới đọc được toàn bộ dự án.
 
@@ -20,6 +20,7 @@ Repo quản lý dự án podcast chuyện gia đình, host AI **MINH THƯ**, đ�
 | Lỗi đã biết & cách xử lý (lỗi tab Flow) | [docs/09-loi-da-biet.md](docs/09-loi-da-biet.md) |
 | Thư mục làm việc `D:\PODCAST VAN HANH` | [docs/10-thu-muc-van-hanh.md](docs/10-thu-muc-van-hanh.md) |
 | Tool Flow PODCAST: giao diện, mã, giá | [docs/11-tool-flow-podcast.md](docs/11-tool-flow-podcast.md) |
+| **Quy trình chạy hằng ngày** | [docs/13-quy-trinh-hang-ngay.md](docs/13-quy-trinh-hang-ngay.md) |
 | Thêm / thay ảnh host | [docs/12-them-anh-host.md](docs/12-them-anh-host.md) · bảng ảnh [host/](host/) |
 | Các tập | [tap/](tap/) |
 | Research & kho ý tưởng | [nghien-cuu/](nghien-cuu/) |

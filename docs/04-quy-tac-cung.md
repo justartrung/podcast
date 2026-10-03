@@ -18,7 +18,7 @@
 9. Không báo "xong", "đã đăng", "sẵn sàng", "viral" khi chưa có bằng chứng thật (file phát được, permalink, số liệu có nhãn).
 10. Không đăng master chưa QA. Master đổi hash → QA lại.
 11. Timeout khi đăng → `publishing_unknown`, kiểm Page trước, không bấm lại mù.
-12. Chạy theo lệnh: mỗi lệnh 1 tập. **Không tự làm lô, không tự bật lịch định kỳ** — chỉ khi chủ yêu cầu. (Cổng pilot đã bỏ 03/10.)
+12. **1 tập/ngày, hẹn đăng 19:30** (chủ quyết 03/10 18:11). Nhiều tập trong ngày → hỏi chủ; thừa → xếp ngày sau, không đăng 2 bài cùng ngày khi chủ chưa đồng ý.
 13. Flow báo "Không chạy được công cụ" → **không bấm "Sửa lỗi"**, đóng tab, mở tab mới, thử ≤ 3 lần, vẫn lỗi thì báo chủ. Không đổi sang tool khác.
 
 ## Về nội dung
