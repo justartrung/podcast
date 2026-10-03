@@ -16,8 +16,8 @@
 9. Không báo "xong", "đã đăng", "sẵn sàng", "viral" khi chưa có bằng chứng thật (file phát được, permalink, số liệu có nhãn).
 10. Không đăng master chưa QA. Master đổi hash → QA lại.
 11. Timeout khi đăng → `publishing_unknown`, kiểm Page trước, không bấm lại mù.
-12. Không đăng bù nhiều tập một ngày. Lỡ slot → bỏ và báo.
-13. Không bật lô 10 / lịch trước khi pilot MT-0001 được đăng thật và xác minh.
+12. Chạy theo lệnh: mỗi lệnh 1 tập. **Không tự làm lô, không tự bật lịch định kỳ** — chỉ khi chủ yêu cầu. (Cổng pilot đã bỏ 03/10.)
+13. Flow báo "Không chạy được công cụ" → **không bấm "Sửa lỗi"**, đóng tab, mở tab mới, thử ≤ 3 lần, vẫn lỗi thì báo chủ. Không đổi sang tool khác.
 
 ## Về nội dung
 14. Chỉ chuyện gia đình; hư cấu minh họa; không tôn giáo; không tư vấn y tế/pháp lý/tài chính.

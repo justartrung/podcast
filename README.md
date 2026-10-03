@@ -1,7 +1,7 @@
 # 🎙️ Podcast tự động — "Chuyện đời cùng Minh Thư"
 
 Repo quản lý dự án podcast chuyện gia đình, host AI **MINH THƯ**, đăng chính trên Facebook Page [Chuyện đời cùng Minh Thư](https://www.facebook.com/chuyendoicungminhthu).
-**Claude** là đầu não điều phối: tìm nội dung viral → chốt → kịch bản → giao tool tạo video → hậu kỳ → duyệt → đăng → xác minh → báo chủ.
+**Claude** là đầu não điều phối duy nhất (thay Codex từ 03/10/2026). **Chạy theo lệnh của chủ**, mỗi lệnh một tập: tìm nội dung viral → chốt → kịch bản → giao tool tạo video → hậu kỳ → duyệt → đăng → xác minh → báo chủ. Lô nhiều tập chỉ khi chủ yêu cầu.
 
 > Dữ liệu gốc (ảnh host, công cụ, bằng chứng) nằm trên máy chủ tại `D:\PODCAST TU DONG` và **không bị chỉnh sửa**. Repo này giữ kế hoạch, trạng thái, góp ý và bản sao văn bản để mọi phiên chat mới đọc được toàn bộ dự án.
 
@@ -16,6 +16,8 @@ Repo quản lý dự án podcast chuyện gia đình, host AI **MINH THƯ**, đ�
 | Bản đồ thư mục gốc D: | [docs/05-ban-do-thu-muc-goc.md](docs/05-ban-do-thu-muc-goc.md) |
 | **Câu hỏi chờ chủ trả lời** | [docs/06-cau-hoi-mo.md](docs/06-cau-hoi-mo.md) |
 | Cách tìm nội dung viral | [docs/07-phuong-phap-tim-viral.md](docs/07-phuong-phap-tim-viral.md) |
+| **Quyết định của chủ** (ưu tiên cao nhất) | [docs/08-quyet-dinh-cua-chu.md](docs/08-quyet-dinh-cua-chu.md) |
+| Lỗi đã biết & cách xử lý (lỗi tab Flow) | [docs/09-loi-da-biet.md](docs/09-loi-da-biet.md) |
 | Các tập | [tap/](tap/) |
 | Research & kho ý tưởng | [nghien-cuu/](nghien-cuu/) |
 | Góp ý sửa hệ thống gốc | [de-xuat/](de-xuat/) |

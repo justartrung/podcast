@@ -28,5 +28,5 @@ Chưa đủ dữ liệu → ghi "**tiềm năng – chưa xác nhận**", không
 Mỗi vòng: 5 ý → **Claude tự chọn 1** (điểm cao nhất, ưu tiên đa dạng nhóm chủ đề) → kịch bản gốc → QA văn bản → `tap/`.
 
 ## Nhịp
-- Đề xuất: 1 vòng/tuần (khi lịch được bật), cộng 1 lần đo lại các nguồn tuần trước để có số liệu tăng trưởng.
+- Chạy 1 vòng khi chủ ra lệnh làm tập mới mà kho ý tưởng không còn ý tốt, hoặc khi chủ yêu cầu research. Mỗi vòng đo lại các nguồn vòng trước để có số liệu tăng trưởng.
 - Lưu: `nghien-cuu/YYYY-MM-DD.md` + cập nhật `nghien-cuu/kho-y-tuong.md`.

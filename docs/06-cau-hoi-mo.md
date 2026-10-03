@@ -6,7 +6,7 @@ Trả lời trực tiếp trong chat hoặc sửa file này (ghi "Trả lời:" 
 Có phải vẫn là Google Flow tool hiện tại (project `286e14cd…`, tool `10a20665…` "Podcast Chuyên Nghiệp CODEX") đã sửa được lỗi, hay một tool/ứng dụng khác hẳn? Tool có bộ chọn giọng nữ Bắc không?
 Trả lời:
 
-### Q2. Media sản xuất mới (clip, master, final.mp4) lưu ở đâu? *(chặn pilot)*
+### Q2. Media sản xuất mới (clip, master, final.mp4) lưu ở đâu? *(chặn tập đầu tiên)*
 Vì không được sửa thư mục gốc, đề xuất: tạo thư mục **mới, riêng** cạnh nó, ví dụ `D:\PODCAST VAN HANH\` (cấu trúc giống `06-san-sang-dang/`), hoặc Google Drive. Hay anh/chị cho phép ghi tiếp vào `D:\PODCAST TU DONG\06-san-xuat` và `06-san-sang-dang` như hệ thống cũ?
 Trả lời:
 
@@ -23,10 +23,10 @@ Trả lời:
 
 ### Q5. Codex còn chạy song song không?
 Nếu Codex vẫn chạy trên cùng thư mục và cùng tài khoản Flow/Facebook, hai bên có thể đăng trùng hoặc tiêu credit trùng. Từ nay Claude là đầu não duy nhất?
-Trả lời:
+Trả lời (03/10 17:00): **Claude thay Codex điều phối hết.** ✅
 
 ### Q6. Duyệt trước khi đăng
-Anh/chị nói "Claude duyệt và chốt, báo lại". Xác nhận: Claude **tự đăng** khi QA đạt, rồi báo (không chờ anh/chị duyệt từng tập)? Riêng **tập thử MT-0001** có muốn xem trước khi đăng không?
+Anh/chị nói "Claude duyệt và chốt, báo lại". Xác nhận: Claude **tự đăng** khi QA đạt, rồi báo (không chờ anh/chị duyệt từng tập)? Riêng **tập đầu tiên MT-0001** có muốn xem trước khi đăng không?
 Trả lời:
 
 ### Q7. TikTok / YouTube
@@ -36,5 +36,5 @@ Trả lời:
 ### Q8. Một số điểm lệch trong hệ thống cũ (chỉ cần xác nhận)
 - Footer thumbnail ghi "COACH MINH THƯ" — đúng ý? (kênh tên "Chuyện đời cùng Minh Thư")
 - Gói Flow: `kiem-ke.json` ghi **PRO 1.050 credit**, `bao-cao-kiem-thu.md` ghi **ULTRA** — gói nào đúng?
-- Giờ đăng 19:30 giờ Việt Nam — giữ nguyên?
+- Giờ đăng: đăng ngay sau QA, hay theo giờ bạn nêu trong lệnh (hệ thống cũ dùng 19:30)?
 Trả lời:

@@ -14,6 +14,6 @@ Nguồn: research vòng 1 (30/09/2026) — chi tiết `ban-sao-goc/10-nghien-cuu
 | Tập | topic_key | Trạng thái |
 |---|---|---|
 | MT-0001 | communication_late_arrival_blame | kịch bản, chưa sản xuất |
-| MT-0002 | money_unconsulted_parent_support | kịch bản, giữ chờ pilot |
+| MT-0002 | money_unconsulted_parent_support | kịch bản, chờ lệnh |
 
 Quy tắc: không xếp hai tập có mâu thuẫn gần giống nhau liền kề.

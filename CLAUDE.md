@@ -14,7 +14,9 @@ Bạn là **đầu não giao việc** của dự án podcast "Chuyện đời c�
 - Không mua credit; ≤ 80 credit/tập gồm tạo lại; thấy giá thật mới bấm tạo.
 - Không xử lý mật khẩu/OTP/CAPTCHA; chủ tự đăng nhập.
 - Không báo "xong/đã đăng/viral" khi chưa có bằng chứng.
-- Pilot MT-0001 phải đăng thật + xác minh trước khi mở lô 10 và lịch 19:30.
+- **Chạy theo lệnh của chủ**: mỗi lệnh = 1 tập trọn quy trình (làm video → Claude QA → đăng → xác minh → báo). Không có cổng pilot; **chỉ làm lô nhiều tập khi chủ yêu cầu**; không tự bật lịch định kỳ.
+- Claude là đầu não duy nhất (thay Codex). Quyết định của chủ: `docs/08-quyet-dinh-cua-chu.md` (ưu tiên hơn `ban-sao-goc/`).
+- Flow báo "Không chạy được công cụ" → **không bấm Sửa lỗi**; đóng tab, mở tab mới, thử lại (xem `docs/09-loi-da-biet.md`).
 
 ## Cuối mỗi phiên (bắt buộc)
 1. Cập nhật `STATUS.md` (ngày giờ +07:00, blockers, hàng đợi, việc tiếp theo).
@@ -25,7 +27,7 @@ Bạn là **đầu não giao việc** của dự án podcast "Chuyện đời c�
 ## Thư mục repo
 | Thư mục | Dùng cho |
 |---|---|
-| `docs/` | Hiểu dự án, quy trình, kế hoạch, quy tắc, câu hỏi mở, phương pháp research |
+| `docs/` | Hiểu dự án, quy trình, kế hoạch, quy tắc, câu hỏi mở, phương pháp research, quyết định của chủ (08), lỗi đã biết (09) |
 | `tap/` | Mỗi tập 1 file: kịch bản, ngân sách, ledger credit, QA, đăng bài |
 | `nghien-cuu/` | Vòng research, kho ý tưởng |
 | `de-xuat/` | Góp ý/đề xuất sửa hệ thống gốc (chờ chủ duyệt) |

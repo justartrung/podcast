@@ -24,17 +24,20 @@ Mỗi mũi tên chỉ đi tiếp khi bước trước **có bằng chứng thậ
 | **Hậu kỳ** — cắt, phụ đề, kiểm master | Claude chạy FFmpeg + faster-whisper | **Cần chốt môi trường** (xem dưới) |
 | **Facebook** — đăng, chống trùng, kiểm permalink | Claude qua trình duyệt trên máy chủ, danh tính Page | Chủ tự đăng nhập |
 | **Lưu trạng thái/kế hoạch** | **GitHub repo này** | Không sửa thư mục gốc D: |
-| **Lịch 19:30** | "Scheduled task" của Claude (chạy phiên mới, cần máy bật + app Claude mở + phiên Flow/FB còn hạn) | Chỉ bật sau pilot |
+| **Kích hoạt** | **Lệnh của chủ** trong chat (mỗi lệnh 1 tập). Lô/lịch định kỳ chỉ khi chủ yêu cầu — khi đó dùng "Scheduled task" của Claude (cần máy bật + app Claude mở + phiên Flow/FB còn hạn) | Mặc định: theo lệnh |
 
 ## Ánh xạ công cụ Codex → Claude
 
 | Hệ thống cũ (Codex) | Thay bằng (Claude) | Trạng thái |
 |---|---|---|
-| `cua_repl` (trình duyệt trong Codex) | Built-in browser của app Claude desktop / Claude in Chrome | Cần thử: mở Flow tool + Page FB |
-| `automation_update` (lịch gắn chat) | Scheduled task của Claude (`create_trigger`, có tùy chọn cần máy tính) | Chưa tạo — chờ pilot |
+| `cua_repl` (trình duyệt trong Codex) | Built-in browser của app Claude desktop / Claude in Chrome | Cần thử: mở Flow tool + Page FB. Lỗi tab Flow → `docs/09-loi-da-biet.md` |
+| `automation_update` (lịch gắn chat) | Scheduled task của Claude (`create_trigger`, có tùy chọn cần máy tính) | Chỉ tạo khi chủ yêu cầu |
 | Python bundled `C:/Users/start/.cache/codex-runtimes/...` | Python trên máy / shell của Claude | Cần kiểm |
 | `08-cong-cu/ffmpeg/*.exe`, `08-cong-cu/python-env` (Windows) | Shell Claude trên máy là **Linux VM** — **không chạy được file .exe Windows**. Phương án: (a) cài ffmpeg + faster-whisper trong VM/cloud của Claude (cần Phiếu duyệt), hoặc (b) chủ chạy lệnh trên Windows | **Cần chủ chọn** |
 | `scripts/quan-ly.py` (ledger, STOP, chống đăng trùng) | Dùng lại logic, nhưng **trạng thái ghi trên GitHub** (`STATUS.md`, `tap/MT-xxxx.md`) thay vì sửa JSON trong D: | Đề xuất |
+
+## Một lệnh = một tập (mặc định)
+Chủ nói kiểu "làm 1 tập" / "làm tập MT-0002" → Claude: (1) chọn ý (từ kho hoặc research mới) → (2) kịch bản → (3) mở tool bằng **tab mới**, xem giá → (4) tạo cảnh 1, nghe/xem → các cảnh còn lại → (5) hậu kỳ → (6) QA 13 mục → (7) đăng → (8) mở permalink xác minh → (9) báo chủ. Dừng giữa chừng chỉ khi: cần đăng nhập/OTP, giá không rõ hoặc vượt 80 credit, tạo lại vẫn lỗi, QA không đạt, tool không mở được sau 3 lần tab mới.
 
 ## Giao thức mỗi phiên chat mới
 
