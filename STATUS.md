@@ -1,7 +1,7 @@
 # STATUS — Trạng thái hiện tại
 
 > **Đọc file này đầu tiên mỗi phiên.** Cập nhật cuối mỗi phiên.
-> Cập nhật lần cuối: **2026-10-03 17:20 (+07:00)** — Claude, phiên 1.
+> Cập nhật lần cuối: **2026-10-03 17:35 (+07:00)** — Claude, phiên 1.
 
 ## Tổng quan
 | Mục | Giá trị |
@@ -16,10 +16,10 @@
 | Tập đã đăng | 0 (0 clip, 0 credit dùng) |
 
 ## Đang chặn (blockers)
-1. **Flow chưa đăng nhập** trong trình duyệt của app Claude (đã mở link 17:15, bị chuyển về trang giới thiệu) → chủ đăng nhập Gmail.
-2. **Thư mục `D:\PODCAST VAN HANH` chưa có** → chủ tạo, Claude xin quyền.
-3. **Giá credit / giây mỗi cảnh / model / giọng nữ Bắc** chưa quan sát trên tool mới.
-4. Lỗi "Không chạy được công cụ" nếu gặp → tab mới, thử ≤ 3 lần (`docs/09`).
+1. **Ảnh host 1–4.png chưa có trong thư viện Flow** của tài khoản trinhthu.hbl → chủ tải lên (đang chờ).
+2. Giọng chỉ điều khiển bằng mô tả chữ (tool không có bộ chọn giọng) → phải nghe kiểm cảnh 1.
+
+✅ Đã xong: Flow đăng nhập (MINH THƯ, 1.050 credit), tool chạy được ngay, đã đọc mã tool (`docs/11`); thư mục `D:\PODCAST VAN HANH` có quyền ghi; faster-whisper cài trên D: + model small nạp OK; FFmpeg 4.4.2 có sẵn.
 
 ## Hàng đợi tập
 | Mã | Tiêu đề | Ảnh | Trạng thái | File |
