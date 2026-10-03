@@ -12,12 +12,15 @@
 
 ## Giai đoạn 1 — Chuyển giao "đầu não" sang Claude
 - [ ] Thử built-in browser / Claude in Chrome: mở được Page Facebook dưới danh tính Page (chủ đăng nhập)
-- [ ] Chốt môi trường hậu kỳ (Q3): ffmpeg + faster-whisper chạy ở đâu; thử lại trên fixture
-- [ ] Chốt nơi lưu media sản xuất mới (Q2) — không ghi vào thư mục gốc nếu chưa được phép
+- [x] Chốt môi trường hậu kỳ (Q3): FFmpeg trong shell Linux của Claude, faster-whisper cài vào D: (`docs/10`)
+- [ ] Cài faster-whisper vào `D:\PODCAST VAN HANH\cong-cu`, thử ASR + burn phụ đề tiếng Việt
+- [x] Chốt nơi lưu media: `D:\PODCAST VAN HANH` (Q2)
+- [ ] Chủ tạo thư mục `D:\PODCAST VAN HANH`, Claude được cấp quyền
 - [ ] Viết lại checklist "ledger credit" + "chống đăng trùng" dạng file trên GitHub (thay `quan-ly.py` ghi vào D:)
 
 ## Giai đoạn 2 — Tool video (nút thắt chính)
-- [ ] **Nhận tool video từ chủ** (link/hướng dẫn)
+- [x] **Nhận tool video từ chủ**: Flow tool `6dae8db1…` (03/10 17:12)
+- [ ] Chủ đăng nhập Gmail trong trình duyệt của app Claude
 - [ ] Mở tool bằng **tab mới** (lỗi "Không chạy được công cụ" là do tab Codex — `docs/09`), xác nhận chạy được
 - [ ] Ghi lại thật: model, giây/cảnh, giá x1, credit còn, cách dán thoại, cách chọn ảnh host
 - [ ] Tìm bộ chọn **giọng** (Character voice): nghe mẫu nữ Bắc, ghi tên/ID
@@ -29,7 +32,7 @@
 - [ ] Tạo các cảnh còn lại (4 cảnh dự kiến), tải clip, ghi hash + mã lượt
 - [ ] Cắt ghép theo audio thật → ASR → nghe sửa → SRT → burn phụ đề
 - [ ] Chèn thumbnail 1 s, dịch audio/SRT +1 s
-- [ ] **Claude QA** đủ 13 mục, gắn SHA-256 master → báo chủ kèm bản xem trước
+- [ ] **Claude QA** đủ 13 mục, gắn SHA-256 master → **chủ xem & duyệt tập đầu**
 - [ ] Đăng Page (giờ theo lệnh của chủ) → mở permalink, phát được, chụp màn hình → `da-dang-xac-minh`
 - [ ] Ghi kết quả chọn ảnh bìa Facebook (được/không)
 

@@ -20,7 +20,7 @@ Mỗi mũi tên chỉ đi tiếp khi bước trước **có bằng chứng thậ
 |---|---|---|
 | **Agent Tổng** — điều phối, ngân sách, STOP, QA, xác minh | **Claude** trong chat của Project "PODCAST" | Đọc repo này đầu mỗi phiên |
 | **Podcast** — chủ đề, thoại, CTA, khóa ảnh | **Claude** (research web + viết) | Theo `ban-sao-goc/skills/podcast-minh-thu/` |
-| **Flow** — tạo clip | **Tool video chủ gửi** (hiện là Google Flow tool), Claude thao tác qua **trình duyệt trên máy chủ** (built-in browser của app Claude, hoặc Claude in Chrome) | Chủ tự đăng nhập/OTP |
+| **Flow** — tạo clip | **Flow tool `6dae8db1…` (project `f37b741b…`)**, Claude thao tác qua **trình duyệt trên máy chủ** (built-in browser của app Claude, hoặc Claude in Chrome) | Chủ tự đăng nhập/OTP |
 | **Hậu kỳ** — cắt, phụ đề, kiểm master | Claude chạy FFmpeg + faster-whisper | **Cần chốt môi trường** (xem dưới) |
 | **Facebook** — đăng, chống trùng, kiểm permalink | Claude qua trình duyệt trên máy chủ, danh tính Page | Chủ tự đăng nhập |
 | **Lưu trạng thái/kế hoạch** | **GitHub repo này** | Không sửa thư mục gốc D: |
@@ -33,7 +33,7 @@ Mỗi mũi tên chỉ đi tiếp khi bước trước **có bằng chứng thậ
 | `cua_repl` (trình duyệt trong Codex) | Built-in browser của app Claude desktop / Claude in Chrome | Cần thử: mở Flow tool + Page FB. Lỗi tab Flow → `docs/09-loi-da-biet.md` |
 | `automation_update` (lịch gắn chat) | Scheduled task của Claude (`create_trigger`, có tùy chọn cần máy tính) | Chỉ tạo khi chủ yêu cầu |
 | Python bundled `C:/Users/start/.cache/codex-runtimes/...` | Python trên máy / shell của Claude | Cần kiểm |
-| `08-cong-cu/ffmpeg/*.exe`, `08-cong-cu/python-env` (Windows) | Shell Claude trên máy là **Linux VM** — **không chạy được file .exe Windows**. Phương án: (a) cài ffmpeg + faster-whisper trong VM/cloud của Claude (cần Phiếu duyệt), hoặc (b) chủ chạy lệnh trên Windows | **Cần chủ chọn** |
+| `08-cong-cu/ffmpeg/*.exe`, `08-cong-cu/python-env` (Windows) | Shell Linux của Claude trên máy: FFmpeg 4.4.2 có sẵn; faster-whisper cài vào `D:\PODCAST VAN HANH\cong-cu`; model small dùng lại từ `08-cong-cu/models` | ✅ Chủ chốt 03/10 (`docs/10`) |
 | `scripts/quan-ly.py` (ledger, STOP, chống đăng trùng) | Dùng lại logic, nhưng **trạng thái ghi trên GitHub** (`STATUS.md`, `tap/MT-xxxx.md`) thay vì sửa JSON trong D: | Đề xuất |
 
 ## Một lệnh = một tập (mặc định)

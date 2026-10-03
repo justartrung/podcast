@@ -4,18 +4,18 @@ Trả lời trực tiếp trong chat hoặc sửa file này (ghi "Trả lời:" 
 
 ### Q1. Tool video sẽ gửi là gì? *(chặn Giai đoạn 2)*
 Có phải vẫn là Google Flow tool hiện tại (project `286e14cd…`, tool `10a20665…` "Podcast Chuyên Nghiệp CODEX") đã sửa được lỗi, hay một tool/ứng dụng khác hẳn? Tool có bộ chọn giọng nữ Bắc không?
-Trả lời:
+Trả lời (03/10 17:12): ✅ https://flow.google.com/project/f37b741b-b3f2-40f8-b490-f23f79b098ed/tool/6dae8db1-89cf-475a-9412-3334f68ebfdd — chủ đăng nhập Gmail, Claude mở link là vào được tool. (Bộ chọn giọng: Claude kiểm khi vào tool.)
 
 ### Q2. Media sản xuất mới (clip, master, final.mp4) lưu ở đâu? *(chặn tập đầu tiên)*
 Vì không được sửa thư mục gốc, đề xuất: tạo thư mục **mới, riêng** cạnh nó, ví dụ `D:\PODCAST VAN HANH\` (cấu trúc giống `06-san-sang-dang/`), hoặc Google Drive. Hay anh/chị cho phép ghi tiếp vào `D:\PODCAST TU DONG\06-san-xuat` và `06-san-sang-dang` như hệ thống cũ?
-Trả lời:
+Trả lời (03/10 17:12): ✅ Lưu trên ổ D, Claude tự đặt tên → **`D:\PODCAST VAN HANH`**. Video trong thư mục này (đã cắt dựng + phụ đề) sẽ được Claude tự đăng Facebook.
 
 ### Q3. Hậu kỳ (FFmpeg + faster-whisper) chạy ở đâu?
 Bộ công cụ trong `08-cong-cu` là bản Windows; shell của Claude trên máy anh/chị là Linux nên không chạy trực tiếp được. Lựa chọn:
 - (a) Claude cài ffmpeg + faster-whisper bản Linux trong môi trường của mình (miễn phí, cần duyệt Phiếu — ~1–3 GB),
 - (b) Claude soạn lệnh, anh/chị chạy trên Windows,
 - (c) Dùng tính năng ghép/phụ đề của chính tool video nếu có.
-Trả lời:
+Trả lời (03/10 17:12): ✅ Chạy bằng FFmpeg, Claude được tải hộ. **Mọi thứ tải về phải để trên ổ D (ổ C đầy).**
 
 ### Q4. Repo GitHub `justartrung/podcast` đang **công khai (public)**.
 Repo có cấu hình kênh, link Page, ID project Flow. Không có mật khẩu/token. Anh/chị có muốn chuyển sang **private** không? (Settings → General → Danger Zone → Change visibility.)
@@ -27,7 +27,7 @@ Trả lời (03/10 17:00): **Claude thay Codex điều phối hết.** ✅
 
 ### Q6. Duyệt trước khi đăng
 Anh/chị nói "Claude duyệt và chốt, báo lại". Xác nhận: Claude **tự đăng** khi QA đạt, rồi báo (không chờ anh/chị duyệt từng tập)? Riêng **tập đầu tiên MT-0001** có muốn xem trước khi đăng không?
-Trả lời:
+Trả lời (03/10 17:12): ✅ **Tập đầu: chủ xem trước khi đăng.** Khi quy trình ổn định → Claude tự đăng.
 
 ### Q7. TikTok / YouTube
 Giai đoạn đầu chỉ Facebook. Có kênh TikTok/YouTube của Minh Thư chưa? Khi nào muốn mở rộng?

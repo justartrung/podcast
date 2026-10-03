@@ -11,6 +11,8 @@
 6. Không nhập mật khẩu, OTP, CAPTCHA; không lưu/đọc cookie, token, API key. Chủ tự đăng nhập.
 7. Không cài phần mềm mới khi chưa có Phiếu đề xuất được duyệt (đã duyệt: FFmpeg/FFprobe, faster-whisper small).
 8. Chỉ đăng vào đúng Page `facebook.com/chuyendoicungminhthu`.
+8a. **Mọi tải về/cài đặt để trên ổ D** (ổ C đầy). Chỉ ghi trong `D:\PODCAST VAN HANH`.
+8b. Tập đầu MT-0001 phải được chủ xem và duyệt trước khi đăng; tự đăng chỉ khi chủ xác nhận quy trình ổn định.
 
 ## Về chất lượng và trung thực
 9. Không báo "xong", "đã đăng", "sẵn sàng", "viral" khi chưa có bằng chứng thật (file phát được, permalink, số liệu có nhãn).

@@ -18,6 +18,7 @@ Repo quản lý dự án podcast chuyện gia đình, host AI **MINH THƯ**, đ�
 | Cách tìm nội dung viral | [docs/07-phuong-phap-tim-viral.md](docs/07-phuong-phap-tim-viral.md) |
 | **Quyết định của chủ** (ưu tiên cao nhất) | [docs/08-quyet-dinh-cua-chu.md](docs/08-quyet-dinh-cua-chu.md) |
 | Lỗi đã biết & cách xử lý (lỗi tab Flow) | [docs/09-loi-da-biet.md](docs/09-loi-da-biet.md) |
+| Thư mục làm việc `D:\PODCAST VAN HANH` | [docs/10-thu-muc-van-hanh.md](docs/10-thu-muc-van-hanh.md) |
 | Các tập | [tap/](tap/) |
 | Research & kho ý tưởng | [nghien-cuu/](nghien-cuu/) |
 | Góp ý sửa hệ thống gốc | [de-xuat/](de-xuat/) |

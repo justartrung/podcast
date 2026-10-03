@@ -16,6 +16,9 @@ Bạn là **đầu não giao việc** của dự án podcast "Chuyện đời c�
 - Không báo "xong/đã đăng/viral" khi chưa có bằng chứng.
 - **Chạy theo lệnh của chủ**: mỗi lệnh = 1 tập trọn quy trình (làm video → Claude QA → đăng → xác minh → báo). Không có cổng pilot; **chỉ làm lô nhiều tập khi chủ yêu cầu**; không tự bật lịch định kỳ.
 - Claude là đầu não duy nhất (thay Codex). Quyết định của chủ: `docs/08-quyet-dinh-cua-chu.md` (ưu tiên hơn `ban-sao-goc/`).
+- **Tool video:** Flow `https://flow.google.com/project/f37b741b-b3f2-40f8-b490-f23f79b098ed/tool/6dae8db1-89cf-475a-9412-3334f68ebfdd` (chủ đăng nhập Gmail).
+- **Chỉ ghi vào `D:\PODCAST VAN HANH`** (`docs/10`). **Mọi tải về/cài đặt để trên ổ D — ổ C đầy.**
+- **Tập đầu MT-0001: chủ xem trước khi đăng.** Sau khi chủ xác nhận ổn định → tự đăng.
 - Flow báo "Không chạy được công cụ" → **không bấm Sửa lỗi**; đóng tab, mở tab mới, thử lại (xem `docs/09-loi-da-biet.md`).
 
 ## Cuối mỗi phiên (bắt buộc)
@@ -27,7 +30,7 @@ Bạn là **đầu não giao việc** của dự án podcast "Chuyện đời c�
 ## Thư mục repo
 | Thư mục | Dùng cho |
 |---|---|
-| `docs/` | Hiểu dự án, quy trình, kế hoạch, quy tắc, câu hỏi mở, phương pháp research, quyết định của chủ (08), lỗi đã biết (09) |
+| `docs/` | Hiểu dự án, quy trình, kế hoạch, quy tắc, câu hỏi mở, phương pháp research, quyết định của chủ (08), lỗi đã biết (09), thư mục vận hành D: (10) |
 | `tap/` | Mỗi tập 1 file: kịch bản, ngân sách, ledger credit, QA, đăng bài |
 | `nghien-cuu/` | Vòng research, kho ý tưởng |
 | `de-xuat/` | Góp ý/đề xuất sửa hệ thống gốc (chờ chủ duyệt) |

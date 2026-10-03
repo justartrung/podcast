@@ -2,6 +2,19 @@
 
 Quyết định ở đây **ưu tiên hơn** mọi tài liệu trong `ban-sao-goc/` (hệ thống Codex 30/09). Trích nguyên văn, có ngày giờ.
 
+## 2026-10-03 17:12 — Tool video, nơi lưu, FFmpeg, duyệt tập đầu
+> "https://flow.google.com/project/f37b741b-b3f2-40f8-b490-f23f79b098ed/tool/6dae8db1-89cf-475a-9412-3334f68ebfdd Đây là link dự án làm video podcast, khi bạn mở flow tôi sẽ đăng nhập vào bằng gmail…"
+> "Video làm ra khi có phụ đề và cắt dựng ffmeg sẽ được lưu ở ổ D (bạn tự đặt tên thư mục), sau khi video được lưu trên ổ D … sẽ được đăng tự động lên facebook (cũng do tự bạn làm)."
+> "phần cắt dựng và phụ đề chạy trên ffmeg (bạn tải hộ tôi cũng được), bộ công cụ trên máy là bản windows."
+> "khi chất lượng đạt thì tôi muốn kiểm tra tập đầu trước khi đăng. Sau đó khi quy trình ổn định thì tự động đăng (tải cái gì thì tải trong ổ D nhé, ổ C tôi đầy)"
+
+**Áp dụng:**
+1. **Tool video hiện hành:** Flow project `f37b741b-b3f2-40f8-b490-f23f79b098ed`, tool `6dae8db1-89cf-475a-9412-3334f68ebfdd`. Thay cho tool `10a20665…` (project `286e14cd…`) trong `cau-hinh-kenh.json` gốc. Chủ tự đăng nhập Gmail.
+2. **Thư mục làm việc mới:** `D:\PODCAST VAN HANH` (do chủ tạo, Claude được cấp quyền). Thư mục gốc `D:\PODCAST TU DONG` vẫn chỉ đọc.
+3. **Hậu kỳ bằng FFmpeg** + phụ đề từ audio (faster-whisper, dùng lại model small đã có trong `08-cong-cu/models`, chỉ đọc).
+4. **Mọi tải về/cài đặt để trên ổ D**, không dùng ổ C.
+5. **Tập đầu tiên: chủ xem trước khi đăng.** Sau khi quy trình ổn định → Claude tự đăng Facebook từ thư mục bàn giao.
+
 ## 2026-10-03 17:00 — Bỏ cổng pilot, chạy theo lệnh; Claude thay Codex
 > "điều kiện mở lịch k cần thiết, chỉ cần làm video, xét chất lượng và đăng, bắt đầu quy trình theo câu lệnh, không cần làm liên tục 10 lô video đăng dần, chỉ làm lô tập nếu tôi yêu cầu."
 > "tool flow báo không chạy được công cụ bởi vì lỗi codex của chat gpt, khi tôi xoá tab đó và mở thủ công tab mới thì sau vài lần thử nó cũng mở được và codex tiếp tục làm việc (lỗi này khá là lưu ý, khi bạn bàn giao hy vọng không gặp lỗi này). Bạn sẽ thay codex điều phối hết nhé"
