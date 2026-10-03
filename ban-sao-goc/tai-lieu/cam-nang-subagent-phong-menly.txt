@@ -1,0 +1,663 @@
+SUBAGENT
+HỆ ĐIỀU HÀNH CÔNG VIỆC TỰ ĐỘNG TRÊN MÁY
+
+
+
+
+CẨM NANG GỐC • 15 TRANG
+
+
+
+
+XÂY DỰNG
+CÔNG XƯỞNG
+SUBAGENT
+Cài Agent Tổng - cấp quyền - đăng ký Agent con - chạy - kiểm tra
+và chỉ dừng tại các điểm chủ sở hữu phải phê duyệt.
+
+
+
+
+     NGƯỜI XÂY DỰNG QUY TRÌNH
+
+     PHONG MENLY
+     AI Go Global US • Học thật - Làm thật - Xây hệ thống
+
+
+
+
+Tài nguyên gốc dùng để đào tạo, triển khai và cá nhân hóa Subagent cho từng người dùng.
+
+                                                                                          PHONG MENLY / 2026
+SUBAGENT / BẢN ĐỒ
+
+                                                                                                                 02
+15 trang - một công xưởng hoàn chỉnh
+Đọc theo thứ tự để không biến Subagent thành một prompt dài thiếu hệ thống.
+
+
+
+
+     01      Khởi động                                 02     Bản đồ            03     Agent Tổng
+
+     Mục tiêu triển khai                               15 bước phải làm         Thiết lập giám sát
+
+
+
+
+     04      Mục tiêu                                  05     Đầu vào           06     Bộ nhớ
+
+     Đầu ra & phạm vi                                  Mẫu học & nguồn việc     Cá nhân hóa đúng
+
+
+
+
+     07      Máy & môi trường                          08     Công cụ & quyền   09     Luồng làm việc
+
+     Nền tảng vận hành                                 Ranh giới an toàn        Quan sát đến bàn giao
+
+
+
+
+     10      Tự chủ                                    11     Quality gate      12     Kích hoạt
+
+     Khi nào tự làm                                    Đạt mới bàn giao         Lệnh, lịch, sự kiện
+
+
+
+
+     13      Edit video                                14     Cài đặt           15     Nguồn & hành động
+
+     Công xưởng mẫu                                    Đề xuất - duyệt - test   Bắt đầu đúng
+
+
+
+
+Nguồn tài nguyên & quy trình: Phong Menly - AI Go Global US                                           SUBAGENT | 2/15
+SUBAGENT / ĐIỀU HÀNH
+
+                                                                                                                        03
+Thiết lập Agent Tổng Giám Sát trước tiên
+Không Agent con nào được chạy ngoài registry, quyền hạn và quality gate do Agent Tổng quản lý.
+
+
+
+
+      A      CHỦ SỞ HỮU                                             B     AGENT TỔNG
+
+     Trao phạm vi quyền; duyệt chi phí, dữ liệu, hành động         Nhận quyền đã duyệt; đăng ký, giao việc, giám sát,
+     bên ngoài và thay đổi có ảnh hưởng lớn.                       kiểm tra và khóa Agent con khi vượt phạm vi.
+
+
+
+
+Bắt buộc tạo 8 thành phần
+
+    01 Registry Agent                                             02 Bản đồ quyền
+
+
+
+
+    03 Nguồn việc                                                 04 Mẫu & bộ nhớ
+
+
+
+
+    05 Hàng đợi                                                   06 Quality gate
+
+
+
+
+    07 Nhật ký                                                    08 Cơ chế dừng
+
+
+
+
+     QUY TẮC PHÂN CẤP
+     Mỗi Agent mới chỉ bổ sung một năng lực; phải kế thừa luật chung và báo cáo về Agent Tổng.
+
+
+
+
+Nguồn tài nguyên & quy trình: Phong Menly - AI Go Global US                                                  SUBAGENT | 3/15
+SUBAGENT / THIẾT KẾ
+
+                                                                                                                    04
+Bắt đầu bằng đầu ra - không bắt đầu bằng công cụ
+Một Subagent tốt được đo bằng kết quả, không phải số lượng công nghệ được cài.
+
+
+
+
+                       ĐẦU RA
+    01                 Tên file, định dạng, kích thước, nơi lưu và ai nhận.
+
+
+
+
+                       ĐIỀU KIỆN ĐẠT
+    02                 Tiêu chuẩn nội dung, kỹ thuật, thương hiệu và pháp lý.
+
+
+
+
+                       PHẠM VI
+    03                 Việc được làm, việc không làm và dữ liệu được phép dùng.
+
+
+
+
+                       ĐIỂM DỪNG
+    04                 Đăng nhập, chi phí, quyền mới, đăng bài hoặc cam kết bên ngoài.
+
+
+
+
+     MẪU MỤC TIÊU CHUẨN
+     Tạo [đầu ra] từ [nguồn], theo [mẫu chuẩn], lưu tại [đích], chỉ hoàn thành khi [quality gate] đạt.
+
+
+
+
+Nguồn tài nguyên & quy trình: Phong Menly - AI Go Global US                                              SUBAGENT | 4/15
+SUBAGENT / ĐẦU VÀO
+
+                                                                                                                              05
+Mẫu học khác dữ liệu sản xuất
+Không có mẫu và nguồn việc rõ ràng, Subagent sẽ đoán - mà đoán thì không thể tự động hóa bền vững.
+
+
+
+
+        1    MẪU HỌC                                                 2     ĐẦU VÀO SẢN XUẤT
+
+       Ví dụ đã được duyệt để rút cấu trúc, phong cách và           Dữ liệu thật của nhiệm vụ hiện tại: file, thư mục, biểu
+       mức chất lượng. Không sao chép dữ kiện riêng trong           mẫu, URL dự án hoặc hàng đợi công việc.
+       mẫu.
+
+
+
+
+Thứ tự tìm đầu vào
+
+   1        Yêu cầu và file vừa nhận
+
+
+
+   2        APP hoặc dự án đang mở
+
+
+
+   3        Registry của khách hàng
+
+
+
+   4        Thư mục nhận tài nguyên
+
+
+
+   5        Bộ nhớ và mẫu đã duyệt
+
+
+
+   6        Hỏi đúng phần vẫn còn thiếu
+
+
+
+
+    QUY TẮC VÀNG
+
+    Không dùng tài sản của khách hàng khác. Không biến suy luận từ một mẫu thành sự thật lâu dài.
+
+
+
+
+Nguồn tài nguyên & quy trình: Phong Menly - AI Go Global US                                                      SUBAGENT | 5/15
+SUBAGENT / CÁ NHÂN HÓA
+
+                                                                                                                   06
+Bộ nhớ đúng giúp Subagent càng làm càng chuẩn
+Chỉ lưu điều người dùng cung cấp, xác nhận hoặc đã duyệt qua kết quả thực tế.
+
+
+
+
+     NÊN LƯU                                                       KHÔNG LƯU
+
+          Giọng viết và từ thường dùng                                 Mật khẩu, OTP, khóa API
+
+
+          Màu sắc, logo, font, bố cục                                  Thông tin thanh toán
+
+
+          Sản phẩm và khách hàng mục tiêu                              Dữ liệu riêng không cần thiết
+
+
+          Thư mục nguồn và nơi bàn giao                                Suy luận chưa xác nhận
+
+
+          Mẫu đã duyệt                                                 Tài sản không rõ quyền
+
+
+          Quy tắc ra quyết định                                        Trạng thái tạm thời đã hết hạn
+
+
+
+
+     CẤU TRÚC HỒ SƠ CÁ NHÂN HÓA
+
+         Dữ kiện đã xác nhận + ngày cập nhật
+
+         Mẫu vàng + lý do được duyệt
+
+         Quy tắc hiện hành + phiên bản
+
+         Mục chưa đủ dữ liệu + câu hỏi cần xác nhận
+
+
+
+
+Nguồn tài nguyên & quy trình: Phong Menly - AI Go Global US                                             SUBAGENT | 6/15
+SUBAGENT / HẠ TẦNG
+
+                                                                                                                           07
+Máy và môi trường cần chuẩn bị
+Đầu não tự kiểm kê, tự đề xuất; người dùng chỉ duyệt những phần cần bổ sung.
+
+
+
+
+      1      Nền tảng chạy Agent
+
+     Workspace riêng, quyền đọc/ghi đúng phạm vi, trình duyệt tích hợp hiển thị.
+
+
+
+
+      2      Công cụ nền
+
+     Runtime phù hợp, trình xử lý file/media, trình duyệt và font cần thiết.
+
+
+
+
+      3      Cô lập dự án
+
+     Chỉ dùng project, workspace, APP, tài khoản và dữ liệu đã cấp; cấm đọc chéo dự án.
+
+
+
+
+      4      Tài khoản & kết nối
+
+     Chỉ dùng tài khoản đã có; chủ tự xử lý đăng nhập, OTP và CAPTCHA.
+
+
+
+
+      5      Tài nguyên máy
+
+     Dung lượng trống, RAM, CPU/GPU và đường dẫn không thay đổi.
+
+
+
+
+    KHÁCH HÀNG KHÔNG PHẢI HỌC CÔNG NGHỆ
+
+    Đầu não chịu trách nhiệm kiểm tra, đề xuất và vận hành công nghệ nền. Người dùng chỉ duyệt phạm vi, chi phí và quyền
+    cần thiết.
+
+
+
+
+Nguồn tài nguyên & quy trình: Phong Menly - AI Go Global US                                                  SUBAGENT | 7/15
+SUBAGENT / AN TOÀN
+
+                                                                                                                     08
+Quyền hạn và ranh giới
+Tự động mạnh nhưng không được vượt quyền người sở hữu.
+
+
+
+
+     TỰ LÀM                                                         PHẢI DỪNG
+
+           Đọc dữ liệu trong phạm vi                                    Mật khẩu, OTP, API key, token
+
+
+           Tạo bản nháp và file mới                                     Mua hàng hoặc phát sinh phí
+
+
+           Sửa lỗi kỹ thuật có thể hoàn tác                             Cấp quyền mới hoặc chia sẻ dữ liệu
+
+
+           Tự retry trong giới hạn                                      Đăng, gửi, bình luận đại diện
+
+
+           Kiểm tra và báo trạng thái                                   Xóa dữ liệu hoặc cam kết bên ngoài
+
+
+
+
+     NGUYÊN TẮC KHÔNG ĐẨY NGƯỜI DÙNG SANG AI KHÁC
+
+     Subagent phải tự vận hành công nghệ nền đã được duyệt. Không bắt khách hàng học hoặc chuyển sang một
+     ứng dụng/trợ lý AI khác. Nếu điều kiện bên ngoài là không thể thay thế, phải giải thích và xin duyệt ngoại lệ
+     trước.
+
+
+
+
+Nguồn tài nguyên & quy trình: Phong Menly - AI Go Global US                                               SUBAGENT | 8/15
+SUBAGENT / VẬN HÀNH
+
+                                                                                             09
+Agent Tổng điều hành 7 bước
+Nhận việc, kiểm tra quyền, giao Agent con và chỉ bàn giao khi quality gate đạt.
+
+
+
+
+               NHẬN VIỆC
+    1
+               Agent Tổng tạo job_id và khóa nguồn đầu vào.
+
+
+
+
+               KIỂM TRA QUYỀN
+    2
+               Đối chiếu phạm vi đã được chủ trao.
+
+
+
+
+               GIAO AGENT CON
+    3
+               Chọn đúng một năng lực và truyền gói công việc.
+
+
+
+
+               THEO DÕI
+    4
+               Nhận trạng thái, lỗi và bằng chứng thực hiện.
+
+
+
+
+               QUALITY GATE
+    5
+               Kiểm tra kỹ thuật, nội dung, thương hiệu và quyền.
+
+
+
+
+               SỬA / KHÓA
+    6
+               Retry có giới hạn; khóa Agent con nếu vượt phạm vi.
+
+
+
+
+               BÀN GIAO & LƯU
+    7
+               Mở kết quả, ghi log và cập nhật bộ nhớ đã duyệt.
+
+
+
+
+Nguồn tài nguyên & quy trình: Phong Menly - AI Go Global US                       SUBAGENT | 9/15
+SUBAGENT / TỰ CHỦ
+
+                                                                                                                          10
+Trao quyền theo từng tầng
+Không trao quyền trắng; Agent Tổng chỉ hành động trong phạm vi đã ghi.
+
+
+
+
+         Tự động hoàn toàn
+         Đầu vào rõ, thao tác có thể hoàn tác, không phát sinh phí, quality gate đo được.
+
+
+
+
+         Tự động có giám sát
+         Agent chạy và hiển thị tiến trình; chủ chỉ xem, không phải nhắc từng bước.
+
+
+
+
+         Xin duyệt trước bước cuối
+         Đăng bài, gửi tin, xuất bản, chia sẻ, trả phí hoặc thay đổi quyền.
+
+
+
+
+         Chủ trực tiếp thao tác
+         Đăng nhập, OTP, CAPTCHA, mật khẩu, xác minh danh tính và thanh toán.
+
+
+
+
+     TỰ CẢI TIẾN CÓ KIỂM SOÁT
+     Tự phân tích lỗi và nâng phiên bản trong dự án; bắt buộc kiểm thử, rollback và không tự mở rộng quyền.
+
+
+
+
+Nguồn tài nguyên & quy trình: Phong Menly - AI Go Global US                                                   SUBAGENT | 10/15
+SUBAGENT / CHẤT LƯỢNG
+
+                                                                                                                           11
+Quality gate: đạt mới được nói “đã xong”
+Bấm nút chạy không phải là hoàn thành. Phải kiểm tra đầu ra thật.
+
+
+
+
+      1      Đúng yêu cầu                                              2    Đúng thương hiệu
+
+     Đủ nội dung, đúng đối tượng, đúng phạm vi.                      Tên, giọng, màu, font, logo và tuyên bố nguồn.
+
+
+
+
+      3      Đúng kỹ thuật                                             4    Đúng quyền
+
+     Định dạng, kích thước, codec, liên kết, file không lỗi.         Tài sản hợp lệ, không lộ dữ liệu, không vượt quyền.
+
+
+
+
+      5      Đúng trải nghiệm                                          6    Có bằng chứng
+
+     Dễ đọc, dễ dùng, mở được và biết bước tiếp theo.                Preview, log, thông số hoặc trạng thái xác nhận.
+
+
+
+
+     RETRY CÓ GIỚI HẠN
+
+     Mỗi lỗi phải ghi nguyên nhân, cách sửa và số lần thử. Hết giới hạn thì báo đúng phần chưa đạt; không lặp vô hạn và
+     không báo hoàn thành giả.
+
+
+
+
+Nguồn tài nguyên & quy trình: Phong Menly - AI Go Global US                                                   SUBAGENT | 11/15
+SUBAGENT / TỰ ĐỘNG HÓA
+
+                                                                                                                                    12
+Kích hoạt, lập lịch và chống gửi trùng
+Agent Tổng kiểm soát thời gian chạy, hàng đợi, nhịp xử lý và trạng thái từng công việc.
+
+
+
+
+     01                                                                       02
+     LỆNH                                                                     LỊCH
+
+     Người dùng nói “chạy đi” hoặc chọn một công việc                         Chạy theo ngày/giờ, chỉ thông báo khi có thay đổi
+     đã định nghĩa.                                                           hoặc cần quyết định.
+
+
+
+
+     03                                                                       04
+     THƯ MỤC                                                                  SỰ KIỆN
+
+     Có file mới trong hộp nhận việc thì tự phân loại và                      Một trạng thái thay đổi: render xong, đơn mới, bình
+     xử lý.                                                                   luận mới, lỗi mới.
+
+
+
+
+     MẪU: SUBAGENT NHẮN TIN CHĂM SÓC
+
+         Tự mở trình duyệt; chủ đăng nhập/OTP, kết nối xong thì Agent tự chạy tiếp.
+         Chạy 08:00-22:00 theo múi giờ đã duyệt; ngoài giờ chỉ xếp hàng.
+         Theo hội thoại, nhịp vừa phải; không gửi dồn, trùng, hàng loạt hoặc né chống spam.
+         Khiếu nại, hoàn tiền, giảm giá, cam kết, dữ liệu nhạy cảm hoặc yêu cầu người thật: chuyển chủ.
+
+
+
+
+Nguồn tài nguyên & quy trình: Phong Menly - AI Go Global US                                                          SUBAGENT | 12/15
+SUBAGENT / MẪU THỰC CHIẾN
+
+                                                                                                                        13
+Công xưởng Subagent Edit Video
+Ví dụ một dây chuyền đủ lớp: nhận việc - dựng - kiểm tra - mở bản xem - bàn giao.
+
+
+
+
+    01         Nhận footage                                         02       Đọc brief & mẫu
+
+
+
+
+    03         Lập storyboard                                       04       Cắt / nối
+
+
+
+
+    05         9:16 & bố cục                                        06       Text / logo / phụ đề
+
+
+
+
+    07         Nhạc & âm lượng                                      08       Màu / làm nét
+
+
+
+
+    09         Render MP4                                           10       FFprobe & xem lại
+
+
+
+
+    NỀN KỸ THUẬT
+
+    HyperFrames + Node.js 22+ + FFmpeg/FFprobe + Chrome + font tiếng Việt. Whisper.cpp, Real-ESRGAN và rembg khi cần.
+
+
+
+
+Nguồn tài nguyên & quy trình: Phong Menly - AI Go Global US                                              SUBAGENT | 13/15
+SUBAGENT / TRIỂN KHAI
+
+                                                                                                                                      14
+Bộ cài để người dùng chỉ việc chạy
+Đủ bốn nhóm dưới đây mới được gọi là gói triển khai hoàn chỉnh.
+
+
+
+
+     01 BỘ NÃO & CẤU HÌNH                                                     02 MÔI TRƯỜNG & BẢO MẬT
+
+         Skill Đầu não Subagent                                                   Trình kiểm tra môi trường
+
+         Trình cài Codex/Claude                                                   Kho secret/API key an toàn
+
+         Hồ sơ cấu hình khách hàng                                                Cô lập project/workspace
+
+         Registry + bản đồ quyền                                                  Kết nối trình duyệt hiển thị
+
+
+
+
+     03 TỰ ĐỘNG VẬN HÀNH                                                      04 MỞ RỘNG & PHỤC HỒI
+
+         Lịch chạy + trigger                                                      Cập nhật + kiểm thử + rollback
+
+         Hàng đợi + chống trùng                                                   Agent chăm sóc khách hàng
+
+         Nhật ký + báo trạng thái                                                 Agent Edit Video
+
+         Quality gate + cảnh báo                                                  Lệnh kiểm tra toàn hệ thống
+
+
+
+
+    CHỈ ĐÁNH DẤU “SẴN SÀNG” KHI
+    Cài xong + kết nối xong + bài test đạt + lịch/trigger hoạt động + bí mật được che + có rollback + người dùng đã duyệt phạm vi
+
+
+
+
+Nguồn tài nguyên & quy trình: Phong Menly - AI Go Global US                                                               SUBAGENT | 14/15
+SUBAGENT / KÍCH HOẠT
+
+                                                                                                                                                    15
+Đính kèm PDF - dán lệnh - chạy
+Khởi tạo Agent Tổng, môi trường và cơ chế bổ sung Agent mới về sau.
+
+
+
+
+     THƯƠNG HIỆU
+
+
+     SUBAGENT
+     NGƯỜI SÁNG LẬP & XÂY DỰNG QUY TRÌNH
+
+
+     PHONG MENLY                                                       Nguồn: Phong Menly - AI Go Global US
+
+
+
+
+Câu lệnh kích hoạt - sao chép nguyên văn
+
+
+     KÍCH HOẠT CÔNG XƯỞNG SUBAGENT
+
+     KÍCH HOẠT CÔNG XƯỞNG SUBAGENT TỪ TÀI LIỆU ĐÍNH KÈM. Hãy đọc toàn bộ PDF, kiểm kê môi trường và khởi tạo một AGENT
+     TỔNG GIÁM SÁT. Tạo registry, bản đồ quyền, nguồn đầu vào, bộ nhớ, quality gate, nhật ký và cơ chế kích hoạt; đề xuất phần thiếu theo ba
+     mức Bắt buộc - Nên có - Tùy chọn để tôi duyệt. Mọi Agent tạo sau phải đăng ký với Agent Tổng, chỉ bổ sung một năng lực, kế thừa luật
+     chung, báo cáo trạng thái và không tự mở rộng quyền. Mỗi Agent chỉ hoạt động trong đúng dự án/môi trường được cấp. Bật cơ chế tự cải
+     tiến có phiên bản, kiểm thử và rollback; không tự thay đổi quyền hoặc quality gate. Tuyệt đối không lưu hay hiển thị mật khẩu, OTP, API key,
+     token, cookie hoặc dữ liệu nhạy cảm; dùng secret/environment phù hợp và che log. Hãy mở trình duyệt tích hợp để tôi giám sát rồi trình
+     Phiếu đề xuất đầu tiên; chưa phát sinh phí, đăng nhập, chia sẻ dữ liệu hoặc hành động bên ngoài khi chưa được duyệt.
+
+
+
+
+Cách dùng
+
+    Tải PDF này lên cùng cuộc trò chuyện của Agent chạy trên máy.
+    Dán nguyên câu lệnh trong khung đen.
+    Duyệt Phiếu đề xuất đầu tiên; Agent Tổng tự triển khai phần còn lại.
+    Mỗi Agent mới phải đăng ký và bổ sung năng lực cho công xưởng hiện có.
+
+                                XEM HƯỚNG DẪN: YOUTUBE.COM/@PHONGMENLYAIGOGLOBALUS
+                                     © 2026 Phong Menly. Ghi nguồn khi chia sẻ hoặc phát triển lại tài nguyên này.
+
+
+
+
+Nguồn tài nguyên & quy trình: Phong Menly - AI Go Global US                                                                        SUBAGENT | 15/15
+

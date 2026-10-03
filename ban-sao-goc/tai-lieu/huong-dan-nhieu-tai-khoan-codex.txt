@@ -1,0 +1,74 @@
+
+TẠO 3 THƯ MỤC CODEX_HOME TRÊN Ổ D
+Mở CMD và chạy các lệnh sau 
+mkdir D:\CodexProfiles mkdir D:\CodexProfiles\.codex-a mkdir D:\CodexProfiles\.codex-b mkdir D:\CodexProfiles\.codex-c
+Sau khi tạo xong, sẽ có 3 thư mục
+D:\CodexProfiles\.codex-a
+D:\CodexProfiles\.codex-b
+D:\CodexProfiles\.codex-c
+Mỗi thư mục sẽ lưu cấu hình và thông tin đăng nhập riêng cho một tài khoản Codex
+ĐĂNG NHẬP 3 TÀI KHOẢN RIÊNG
+Tài khoản A: mở CMD thứ nhất và chạy
+set CODEX_HOME=D:\CodexProfiles\.codex-a codex --login
+Trình duyệt mở ra thì đăng nhập tài khoản ChatGPT/Codex thứ nhất
+Tài khoản B: mở CMD thứ hai và chạy
+set CODEX_HOME=D:\CodexProfiles\.codex-b codex --login
+Đăng nhập tài khoản ChatGPT/Codex thứ hai. Tài khoản C mở CMD thứ ba và chạy
+set CODEX_HOME=D:\CodexProfiles\.codex-c codex --login
+Đăng nhập tài khoản ChatGPT/Codex thứ ba
+Cách kiểm tra profile đang dùng
+Ví dụ kiểm tra tài khoản A:
+set CODEX_HOME=D:\CodexProfiles\.codex-a codex login status
+ TẠO 3 FILE .BAT ĐỂ MỞ NHANH 3 AI
+Giả sử project nằm tại
+D:\Projects\myapp
+cóthể để các file .bat ngay trong D:\CodexProfiles hoặc trong một thư mục riêng như D:\CodexLaunchers. 
+File ai-a.bat
+Tạo file ai-a.bat, chọn Edit in Notepad và dán nội dung:
+@echo off set CODEX_HOME=D:\CodexProfiles\.codex-a cd /d D:\Projects\myapp codex pause
+File ai-b.bat
+@echo off set CODEX_HOME=D:\CodexProfiles\.codex-b cd /d D:\Projects\myapp codex pause
+File ai-c.bat
+@echo off set CODEX_HOME=D:\CodexProfiles\.codex-c cd /d D:\Projects\myapp codex pause
+Sau khi lưu, double-click lần lượt ai-a.bat, ai-b.bat và ai-c.bat, sẽ có 3 cửa sổ Codex riêng, dùng 3 profile riêng, nhưng cùng làm việc trong một project.
+LƯU Ý KHI TẠO FILE .BAT
+Nếu file .bat đang hiển thị 0 KB thì có nghĩa là file chưa có nội dung hoặc chưa được lưu. Hãy chuột phải vào file, chọn Edit in Notepad, dán nội dung, bấm Ctrl + S rồi đóng Notepad.
+Nếu Windows báo “This app can’t run on your PC”, trước tiên hãy kiểm tra file .bat có thực sự chứa nội dung hay vẫn là 0 KB. Đồng thời bật hiển thị phần mở rộng tên file để chắc chắn file là ai-a.bat chứ không phải ai-a.bat.txt.
+CÁCH DÙNG HẰNG NGÀY
+Sau khi đã thiết lập xong, bạn không cần đăng nhập lại mỗi lần. Chỉ cần double-click 3 file .bat. Mỗi file sẽ tự đặt CODEX_HOME đúng profile, chuyển vào project và chạy Codex.
+ai-a.bat  ->  tài kho n A  ->  D:\Projects\myapp
+ai-b.bat  ->  tài kho n B  ->  D:\Projects\myapp ai-c.bat  ->  tài kho n C  ->  D:\Projects\myapp
+CÁCH GIAO VIỆC CHO 3 AI
+Vì cả 3 AI cùng nhìn thấy một project, bạn nên giao nhiệm vụ rõ ràng để tránh việc hai AI cùng sửa một file.
+Ví dụ:
+AI A: phụ trách frontend, giao diện, component.
+AI B: phụ trách backend, API, database.
+AI C: phụ trách test, tài liệu, review l i.
+Nếu một file dùng chung như package.json, .env, file config hoặc database schema cần sửa, nên chỉ giao cho một AI xử lý tại một thời điểm.
+Nên tạo file AI_RULES.md trong project
+Bạn có thể tạo file D:\Projects\myapp\AI_RULES.md với nội dung ngắn gọn như sau:
+# AI Working Rules Có 3 AI cùng làm việc trong project này.
+AI A: ch phụ trách frontend
+AI B: ch phụ trách backend/API
+AI C: ch phụ trách test, docs và review
+Quy t c chung:
+Không xóa file c a AI khác
+Không tự ý format toàn bộ project
+Không chạy lệnh phá h y dữ liệu n u chưa được phép
+Sau khi làm xong, liệt kê các file đã tạo hoặc s a
+Khi mở từng Codex, có thể nhắn: “Đọc AI_RULES.md trước. Bạn là AI A/B/C và chỉ làm đúng phạm vi được giao.”
+NÊN DÙNG GIT ĐỂ TRÁNH MẤT CODE
+Trước khi cho 3 AI làm việc, nếu project chưa có Git thì có thể chạy:
+cd /d D:\Projects\myapp git init git add . git commit -m "Initial project before Codex agents"
+Trong lúc làm, kiểm tra thay đổi bằng:
+git status git diff
+Khi một phần việc đã ổn, commit lại để có thể quay về trạng thái cũ nếu cần.
+XỬ LÝ LỖI CODEX_HOME KHÔNG TỒN TẠI
+Nếu thấy thông báo kiểu:
+CODEX_HOME points to "D:\CodexProfiles\.codex-a", but that path does not exist thì chỉ cần tạo thư mục đó trước:
+mkdir D:\CodexProfiles\.codex-a
+Sau đó chạy lại:
+set CODEX_HOME=D:\CodexProfiles\.codex-a codex --login
+VỀ LỰA CHỌN SANDBOX KHI CODEX HỎI
+Nếu Codex hiện các lựa chọn sandbox, lựa chọn mặc định an toàn hơn thường yêu cầu quyền Administrator. Nếu bạn không muốn chạy với quyền admin thì có thể chọn non-admin sandbox, nhưng mức bảo vệ thấp hơn. Nếu dùng project quan trọng, nên bật Git và sao lưu trước.
+

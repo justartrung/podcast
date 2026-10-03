@@ -1,0 +1,1 @@
+{"cuts_reviewed_against_audio": true, "reviewer": "synthetic_pipeline_test_only", "output": "09-kiem-thu/edited.mp4", "clips": [{"file": "09-kiem-thu/fixture.mp4", "sha256": "f44f31c61d11b6aca55e7a7f23d68674e1ca6b6c93149a94933aa8ce61749a8e", "keep_start": 0.2, "keep_end": 1.8}]}

@@ -1,0 +1,63 @@
+{
+  "checked_at": "2026-09-30",
+  "python": "C:/Users/start/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+  "node": "C:/Users/start/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe",
+  "python_modules_available": [
+    "pypdf",
+    "docx",
+    "PIL",
+    "numpy"
+  ],
+  "python_modules_not_found": [
+    "imageio_ffmpeg",
+    "faster_whisper",
+    "whisper",
+    "torch",
+    "soundfile",
+    "cv2"
+  ],
+  "ffmpeg": "D:\\_CHUYEN NGHE TRADE_\\PODCAST TU DONG\\08-cong-cu\\ffmpeg\\ffmpeg-9.0.2-essentials_build\\bin\\ffmpeg.exe",
+  "ffprobe": "D:\\_CHUYEN NGHE TRADE_\\PODCAST TU DONG\\08-cong-cu\\ffmpeg\\ffmpeg-9.0.2-essentials_build\\bin\\ffprobe.exe",
+  "executable_search_scope": [
+    "PATH",
+    "C:/ffmpeg",
+    "D:/ffmpeg",
+    "C:/Program Files/ffmpeg",
+    "C:/Users/start/AppData/Local/Microsoft/WinGet/Packages",
+    "D:/_CHUYEN NGHE TRADE_"
+  ],
+  "d_free_bytes_observed": 33561059328,
+  "browser": "Codex In-app Browser via cua_repl",
+  "flow": {
+    "status": "signed_in_new_tool_cannot_run_character_voice_unverified",
+    "requested_tool_opened": true,
+    "last_checked": "2026-09-30T16:04:47+07:00",
+    "tool_url": "https://flow.google.com/project/286e14cd-d1cb-4de6-88d1-d9ee857f90ff/tool/10a20665-c278-4d06-9dbb-32bd4fee681b",
+    "account_display_name": "Quanly Youtube",
+    "tier": "PRO",
+    "observed_remaining_credits": 1050,
+    "engine_label": "OMNI 1.1 FLASH",
+    "actual_generation_model_verified": false,
+    "observed_credits_per_generation": null,
+    "seconds_per_scene": null,
+    "vietnamese_speech_verified": false,
+    "generation_submitted": false,
+    "evidence": "07-bang-chung/flow-character-tool-loi.jpg",
+    "character_report": "03-he-thong/kiem-tra-character.md"
+  },
+  "facebook": {
+    "status": "signed_in_page_identity_switched",
+    "page_url": "https://www.facebook.com/chuyendoicungminhthu",
+    "evidence": "07-bang-chung/facebook-quan-ly-page.png",
+    "publish_test": "not_run"
+  },
+  "scheduler_tool": "mcp__codex_app__automation_update available, not activated",
+  "direct_flow_or_facebook_connector": "not_available_in_tool_inventory",
+  "asr_python": "D:\\_CHUYEN NGHE TRADE_\\PODCAST TU DONG\\08-cong-cu\\python-env\\Scripts\\python.exe",
+  "ffmpeg_version": "9.0.2",
+  "ffmpeg_archive_sha256": "60f467265b1e312373dbcd92200c2618a74850f98d3d078e94296bb3fa2047ba",
+  "ffmpeg_source": "https://github.com/GyanD/codexffmpeg/releases/download/9.0.2/ffmpeg-9.0.2-essentials_build.zip",
+  "whisper_model_path": "08-cong-cu\\models\\models--Systran--faster-whisper-small\\snapshots\\536b0662742c02347bc0e980a01041f333bce120",
+  "asr_status": "small_model_reloaded_offline_cpu_int8_av16.0.1_pilot_audio_pending",
+  "python_module_search_scope": "python_modules_available/not_found refer to bundled Python; faster-whisper installed in approved asr_python venv"
+}

@@ -1,0 +1,12 @@
+{
+  "checked_at": "2026-09-30T16:16:14+07:00",
+  "scope": "text_only",
+  "family_content": true,
+  "fiction_label": true,
+  "no_greeting": true,
+  "topic_cta": true,
+  "original_script": true,
+  "different_previous_conflict": true,
+  "audio_video_qa": false,
+  "production_allowed": false
+}

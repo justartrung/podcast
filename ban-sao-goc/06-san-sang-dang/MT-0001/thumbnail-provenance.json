@@ -1,0 +1,12 @@
+{
+  "source": "02-host/1.png",
+  "source_sha256": "2c5090e7e70a9537ae8497f10e317f4a02a382aa327260d4b751ab33b1042aed",
+  "size": [
+    1080,
+    1920
+  ],
+  "face_regenerated": false,
+  "font": "C:\\Windows\\Fonts\\timesbd.ttf",
+  "episode": "MT-0001",
+  "status": "thumbnail_only_not_episode_QA"
+}

@@ -1,0 +1,130 @@
+{
+  "ideas": [
+    {
+      "id": "I01",
+      "hook": "Một khoản tiền giúp bố mẹ có thể làm người bạn đời thấy mình đứng ngoài chính ngôi nhà mình.",
+      "summary": "Chồng lấy quỹ sửa mái nhà để giúp bố mẹ mà chưa bàn; vợ giận vì thiếu tiếng nói. Hai người thống nhất khoản giúp đỡ và cách bàn trước.",
+      "angle": "Hiếu thảo và cùng quyết định có thể đi cùng nhau; không biến bên nội thành đối thủ.",
+      "thumbnail_title": "GIÚP BỐ MẸ\nSAO VỢ LẠI BUỒN?",
+      "cta": "Khoản chi nào trong nhà bạn cần hai người cùng bàn trước?",
+      "topic_key": "money_unconsulted_parent_support",
+      "sources": [
+        "R01",
+        "R11"
+      ],
+      "scores": {
+        "fit": 5,
+        "potential": 4,
+        "originality": 5,
+        "evidence": 4
+      },
+      "selected": true,
+      "fiction": true,
+      "created_at": "2026-09-30T16:16:14+07:00",
+      "total_score": 18,
+      "potential_is_editorial_estimate": true
+    },
+    {
+      "id": "I02",
+      "hook": "Anh rửa hết bát rồi, nhưng chị vẫn là người phải nhớ mọi việc.",
+      "summary": "Vợ luôn nhắc con ăn, lịch học và mua đồ; chồng nghĩ mình đã làm đủ. Họ chia quyền phụ trách từng việc, gồm cả nhớ và theo dõi.",
+      "angle": "Phân công trách nhiệm trọn việc, tránh chỉ đếm số việc nhà.",
+      "thumbnail_title": "AI PHẢI NHỚ\nMỌI VIỆC TRONG NHÀ?",
+      "cta": "Bạn muốn người nhà phụ trách trọn việc nào?",
+      "topic_key": "housework_mental_load",
+      "sources": [
+        "R04",
+        "R06"
+      ],
+      "scores": {
+        "fit": 5,
+        "potential": 4,
+        "originality": 4,
+        "evidence": 3
+      },
+      "selected": false,
+      "fiction": true,
+      "created_at": "2026-09-30T16:16:14+07:00",
+      "total_score": 16,
+      "potential_is_editorial_estimate": true
+    },
+    {
+      "id": "I03",
+      "hook": "Mẹ giữ chìa khóa để giúp, nhưng mỗi lần cửa mở, con dâu lại giật mình.",
+      "summary": "Mẹ chồng ghé không báo trước; đôi trẻ biết ơn sự giúp đỡ nhưng muốn riêng tư. Con trai cùng vợ đề nghị hẹn trước, vẫn dành giờ thăm mẹ.",
+      "angle": "Ranh giới là cách giữ quan hệ, không phải cắt quan hệ.",
+      "thumbnail_title": "CÓ CHÌA KHÓA\nCÓ NÊN TỰ VÀO?",
+      "cta": "Gia đình bạn báo trước thế nào khi ghé thăm nhau?",
+      "topic_key": "inlaw_unannounced_visits",
+      "sources": [
+        "R02",
+        "R03",
+        "R05"
+      ],
+      "scores": {
+        "fit": 5,
+        "potential": 5,
+        "originality": 4,
+        "evidence": 4
+      },
+      "selected": false,
+      "fiction": true,
+      "created_at": "2026-09-30T16:16:14+07:00",
+      "total_score": 18,
+      "potential_is_editorial_estimate": true
+    },
+    {
+      "id": "I04",
+      "hook": "Con vừa ngủ, cả nhà bảo chị nghỉ đi; rồi mọi người lại gọi chị tìm từng món đồ.",
+      "summary": "Người mẹ muốn một giờ nghỉ không bị gọi; chồng chủ động nhận ca chăm con và tự tìm đồ.",
+      "angle": "Nghỉ cần được bảo vệ bằng hành động; không chẩn đoán tâm lý hoặc khuyên y khoa.",
+      "thumbnail_title": "MỘT GIỜ NGHỈ\nSAO KHÓ ĐẾN VẬY?",
+      "cta": "Bạn có thể nhận một ca việc nào để người nhà được nghỉ?",
+      "topic_key": "parenting_uninterrupted_rest",
+      "sources": [
+        "R04",
+        "R06",
+        "R09"
+      ],
+      "scores": {
+        "fit": 5,
+        "potential": 4,
+        "originality": 4,
+        "evidence": 3
+      },
+      "selected": false,
+      "fiction": true,
+      "created_at": "2026-09-30T16:16:14+07:00",
+      "total_score": 16,
+      "potential_is_editorial_estimate": true
+    },
+    {
+      "id": "I05",
+      "hook": "Tết chưa đến, hai vợ chồng đã giận nhau vì câu: năm nay về nhà ai?",
+      "summary": "Hai người đều sợ bố mẹ mình buồn; họ bàn lịch thăm và thời gian nghỉ, giải thích chung với hai bên.",
+      "angle": "Cân bằng không nhất thiết chia giờ y hệt; nhìn cả quãng đường và sức khỏe.",
+      "thumbnail_title": "TẾT VỀ NHÀ AI\nAI CŨNG SỢ MẸ BUỒN",
+      "cta": "Hai bạn bàn lịch thăm hai bên gia đình từ khi nào?",
+      "topic_key": "holiday_two_families",
+      "sources": [
+        "R02",
+        "R10"
+      ],
+      "scores": {
+        "fit": 5,
+        "potential": 4,
+        "originality": 4,
+        "evidence": 3
+      },
+      "selected": false,
+      "fiction": true,
+      "created_at": "2026-09-30T16:16:14+07:00",
+      "total_score": 16,
+      "potential_is_editorial_estimate": true
+    }
+  ],
+  "selected": "I01",
+  "scoring_scale": "Each criterion 0–5; potential is an editorial estimate, not virality proof",
+  "previous_conflict": "MT-0001: tired spouses interpret a late-arrival question as blame",
+  "adjacent_duplicate_check": "I01 differs in money and joint consent; I02 and I04 must not be adjacent without a different conflict"
+}

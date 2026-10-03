@@ -1,0 +1,157 @@
+{
+  "version": 3,
+  "channel": "Chuyện đời cùng Minh Thư",
+  "host": "MINH THƯ",
+  "language": "vi",
+  "topics": "family_only",
+  "greeting": false,
+  "cta": "topic_specific",
+  "religion": false,
+  "host_images": [
+    "02-host/1.png",
+    "02-host/2.png",
+    "02-host/3.png",
+    "02-host/4.png"
+  ],
+  "rotation": "episode_number_modulo_4",
+  "one_image_per_episode": true,
+  "video": {
+    "aspect_ratio": "9:16",
+    "max_duration_seconds": 90,
+    "voice_target": "Nữ miền Bắc trầm ấm",
+    "music": false,
+    "trim_excess": true,
+    "subtitles": "audio_timestamps_after_edit",
+    "subtitle_max_drift_seconds": 0.25,
+    "trim_repeated_and_error_segments": true,
+    "preserve_words_and_meaning": true,
+    "thumbnail_intro_seconds": 1,
+    "subtitle_offset_seconds": 1,
+    "review_actual_audio_and_video": true
+  },
+  "flow": {
+    "tool_url": "https://flow.google.com/project/286e14cd-d1cb-4de6-88d1-d9ee857f90ff/tool/10a20665-c278-4d06-9dbb-32bd4fee681b",
+    "project_id": "286e14cd-d1cb-4de6-88d1-d9ee857f90ff",
+    "tool_id": "10a20665-c278-4d06-9dbb-32bd4fee681b",
+    "credit_limit_per_episode": 80,
+    "includes_retries": true,
+    "max_retries_per_scene": 1,
+    "buy_credits": false,
+    "model": null,
+    "seconds_per_scene": null,
+    "observed_credits_per_generation": null,
+    "require_observed_price": true,
+    "outputs_per_generation": 1,
+    "character_voice": {
+      "source": "existing_flow_character_voice_only",
+      "preference": "Nữ tiếng Việt miền Bắc, trưởng thành, ấm áp, kể chuyện tự nhiên",
+      "name": null,
+      "id": null,
+      "selection_steps": null,
+      "lock_across_scenes_and_episodes": true,
+      "status": "blocked_tool_cannot_run_no_voice_selector_observed",
+      "sample_listening_verified": false,
+      "short_scene_qa_verified": false,
+      "test_costs_in_episode_cap": true,
+      "external_voice_models": false,
+      "integration_proposal_before_tool_edit": true
+    }
+  },
+  "facebook": {
+    "page_url": "https://www.facebook.com/chuyendoicungminhthu",
+    "page_name": "Chuyện đời cùng Minh Thư",
+    "posting_authorized": true,
+    "verify_permalink_and_playback": true,
+    "check_cover_selection_actual": true,
+    "check_existing_before_retry": true
+  },
+  "schedule": {
+    "timezone": "Asia/Bangkok",
+    "local_time": "19:30",
+    "episodes_per_day": 1,
+    "enabled": false,
+    "missed_slot": "skip_and_report_do_not_backfill",
+    "pilot_must_be_verified": true,
+    "require_real_workflow_execution_test": true,
+    "heartbeat_reminder_is_sufficient": false,
+    "required_conditions": [
+      "machine_awake",
+      "Codex_app_running",
+      "Flow_session_valid",
+      "Facebook_Page_session_valid",
+      "STOP_off",
+      "pilot_verified"
+    ]
+  },
+  "batch": {
+    "next_batch_size": 10,
+    "enabled": false
+  },
+  "install_requires_approved_proposal": true,
+  "ending": {
+    "greeting": false,
+    "thanks": false,
+    "goodbye": false,
+    "cta": "topic_specific"
+  },
+  "thumbnail": {
+    "width": 1080,
+    "height": 1920,
+    "background": "black_metallic_gold",
+    "title": {
+      "uppercase": true,
+      "font": "serif",
+      "colour": "metallic_gold",
+      "raised": true,
+      "lines": [
+        2,
+        3
+      ],
+      "position": "top",
+      "mobile_readable": true
+    },
+    "host": "locked_episode_photo_preserve_face_and_aspect",
+    "text_over_face": false,
+    "footer": "COACH MINH THƯ",
+    "footer_style": "black_gold_border_soft_gold_glow",
+    "separate_text_compositing": true,
+    "regenerate_passed_clips": false
+  },
+  "delivery": {
+    "directory": "06-san-sang-dang/{episode_id}",
+    "required": [
+      "final.mp4",
+      "thumbnail.png",
+      "caption.txt",
+      "subtitles.srt"
+    ]
+  },
+  "research": {
+    "platforms": [
+      "Facebook",
+      "TikTok",
+      "YouTube"
+    ],
+    "language": "vi",
+    "minimum_contents": 10,
+    "minimum_channels": 5,
+    "prefer_recent_days": 90,
+    "evidence_required": true,
+    "unknown_metrics_must_be_explicit": true,
+    "viral_requires_evidence": true,
+    "ideas_per_round": 5,
+    "auto_select_one": true,
+    "original_script_only": true,
+    "prevent_adjacent_conflict_repeat": true,
+    "storage": "10-nghien-cuu",
+    "procedure": "skills/podcast-minh-thu/references/research-va-character.md",
+    "schedule": {
+      "enabled": false,
+      "timezone": "Asia/Bangkok",
+      "proposed_frequency": "weekly",
+      "time": null,
+      "real_execution_verified": false
+    },
+    "last_round": "10-nghien-cuu/research-2026-09-30.json"
+  }
+}

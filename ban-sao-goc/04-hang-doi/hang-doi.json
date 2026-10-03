@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "episodes": [
+    {
+      "id": "MT-0001",
+      "number": 1,
+      "title": "Khi câu hỏi nhỏ thành lời trách",
+      "host_image": "02-host/1.png",
+      "host_sha256": "2c5090e7e70a9537ae8497f10e317f4a02a382aa327260d4b751ab33b1042aed",
+      "status": "draft",
+      "created_at": "2026-09-30T12:24:26+07:00",
+      "generations": [],
+      "qa": null,
+      "publication": null
+    },
+    {
+      "id": "MT-0002",
+      "number": 2,
+      "title": "Giúp bố mẹ, sao vợ lại buồn?",
+      "host_image": "02-host/2.png",
+      "host_sha256": "f5a00e58b058574a3186e92b305867bb0f414cab98dc8e3e2872a7d660e2073a",
+      "status": "draft",
+      "created_at": "2026-09-30T16:16:14+07:00",
+      "idea_id": "I01",
+      "research_file": "10-nghien-cuu/research-2026-09-30.json",
+      "production_hold": "pilot_not_verified_and_character_voice_price_unverified",
+      "generations": [],
+      "qa": null,
+      "publication": null
+    }
+  ]
+}

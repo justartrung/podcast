@@ -1,0 +1,4 @@
+interface:
+  display_name: "Subagent tạo video"
+  short_description: "Tự động tạo TVC bằng Google Flow từ Cameo và ảnh bối cảnh"
+  default_prompt: "Hãy chạy toàn bộ quy trình tạo video tự động từ Cameo và hình ảnh tôi cung cấp."

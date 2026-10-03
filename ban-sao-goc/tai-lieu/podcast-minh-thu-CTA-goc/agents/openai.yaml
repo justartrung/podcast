@@ -1,0 +1,14 @@
+interface:
+  display_name: Podcast Minh Thư — từng bước
+  short_description: Kịch bản, host, Gemini, Flow, thumbnail và caption
+  default_prompt: Dùng $podcast-minh-thu làm một tập podcast mới, báo tuần tự từng
+    bước.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

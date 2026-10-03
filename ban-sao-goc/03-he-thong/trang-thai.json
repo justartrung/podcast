@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "readiness": "not_ready",
+  "pilot_episode_id": "MT-0001",
+  "pilot_verified": false,
+  "batch_unlocked": false,
+  "schedule_enabled": false,
+  "automation_id": null,
+  "blockers": [
+    "observed_flow_price_duration_and_budget_plan",
+    "vietnamese_speech_not_verified",
+    "pilot_production_qa_and_post_verification",
+    "scheduled_workflow_execution_not_tested",
+    "new_flow_tool_cannot_run",
+    "character_sample_and_short_scene_qa_blocked"
+  ],
+  "last_updated": "2026-09-30T16:18:49+07:00",
+  "research_first_round": {
+    "status": "completed_with_explicit_metadata_limits",
+    "references": 12,
+    "selected_idea": "I01",
+    "queued_draft": "MT-0002",
+    "schedule_enabled": false
+  }
+}

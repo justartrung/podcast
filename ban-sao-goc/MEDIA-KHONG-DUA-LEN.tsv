@@ -1,0 +1,38 @@
+# File media/bằng chứng chỉ nằm ở D:\PODCAST TU DONG (không đưa lên GitHub). Cột: bytes, đường dẫn
+2228496	02-host/1.png	sha256=2c5090e7e70a9537ae8497f10e317f4a02a382aa327260d4b751ab33b1042aed
+2306854	02-host/2.png	sha256=f5a00e58b058574a3186e92b305867bb0f414cab98dc8e3e2872a7d660e2073a
+2377662	02-host/3.png	sha256=c130ad6658522569b971da0926e22a5f8164530967b0c3c33585931936101d55
+2308718	02-host/4.png	sha256=c8df4fe0bbce715a5f78c282fa6dbb21b427fe31cf49ba385b4fcc22656eec28
+1664268	06-san-sang-dang/MT-0001/thumbnail.png	sha256=9ca7538ea4effc574429688e13deded1c7cd9d1662a5976ae9a0a56e558dc2f7
+44160	07-bang-chung/character-thanh-phan-hien-co.jpg
+101770	07-bang-chung/facebook-chua-dang-nhap.png
+109599	07-bang-chung/facebook-quan-ly-page.png
+99043	07-bang-chung/facebook-research.jpg
+16553	07-bang-chung/facebook-research.txt
+47743	07-bang-chung/flow-character-tool-loi.jpg
+20955	07-bang-chung/flow-da-dang-xuat.png
+52427	07-bang-chung/flow-kiem-tra-yeu-cau-dang-facebook.png
+51409	07-bang-chung/flow-mo-lai-van-loi.png
+61068	07-bang-chung/flow-moi-credit.jpg
+41620	07-bang-chung/flow-moi-khung-trong.jpg
+110729	07-bang-chung/flow-thu-lai-lan-3.png
+117212	07-bang-chung/flow-thu-lai-van-loi.png
+50870	07-bang-chung/flow-tool-khong-chay.png
+76082	07-bang-chung/flow-tool-khung-trong.png
+29699	07-bang-chung/flow-tool-moi-khong-tim-thay.jpg
+51416	07-bang-chung/flow-tool-sau-sua.png
+5279	07-bang-chung/tiktok-chia-se.txt
+33201	07-bang-chung/tiktok-ranh-gioi.txt
+333	07-bang-chung/tiktok-research-search.txt
+33557	09-kiem-thu/edited.mp4
+23230	09-kiem-thu/fixture.mp4
+342424	09-kiem-thu/intro-test/final.mp4
+1430454	09-kiem-thu/intro-test/frame-01.png
+10387	09-kiem-thu/intro-test/frame-02.png
+33492	09-kiem-thu/segments/001.mp4
+70965	09-kiem-thu/subtitle-test-v2.mp4
+51167	09-kiem-thu/subtitle-test-v3.mp4
+71730	09-kiem-thu/subtitle-test-v3.png
+70965	09-kiem-thu/subtitle-test.mp4
+135088	09-kiem-thu/subtitle-test.png
+# Ngoài ra: 01-tai-lieu/*.pdf,*.docx,*.zip (đã trích văn bản vào ban-sao-goc/tai-lieu), 08-cong-cu/ (ffmpeg 9.0.2, python-env, model faster-whisper-small, ~1.1 GB)

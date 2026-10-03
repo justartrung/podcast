@@ -1,0 +1,18 @@
+{
+  "episodes": [
+    {
+      "episode_id": "MT-0001",
+      "topic_key": "communication_late_arrival_blame",
+      "status": "draft_not_produced",
+      "used_in_published_episode": false
+    },
+    {
+      "episode_id": "MT-0002",
+      "idea_id": "I01",
+      "topic_key": "money_unconsulted_parent_support",
+      "status": "draft_waiting_pilot_and_voice",
+      "used_in_published_episode": false
+    }
+  ],
+  "published_topics": []
+}

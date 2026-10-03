@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "execution_mode": "roles_in_current_codex_chat",
+  "agents": [
+    {
+      "id": "agent-tong",
+      "role": "Điều phối, ngân sách, STOP, QA, xác minh",
+      "status": "configured"
+    },
+    {
+      "id": "podcast",
+      "role": "Chuyện gia đình, thoại, CTA, khóa ảnh",
+      "skill": "skills/podcast-minh-thu/SKILL.md",
+      "status": "configured"
+    },
+    {
+      "id": "flow",
+      "role": "Tạo clip qua trình duyệt đúng tool",
+      "status": "awaiting_login"
+    },
+    {
+      "id": "hau-ky",
+      "role": "Cắt dựng, phụ đề theo audio, kiểm master",
+      "status": "local_tools_smoke_test_passed_pilot_audio_pending"
+    },
+    {
+      "id": "facebook",
+      "role": "Đăng đúng Page, chống trùng, kiểm permalink",
+      "status": "signed_in_page_identity_switched_publish_test_pending"
+    }
+  ],
+  "permissions": {
+    "project_local_read_write": true,
+    "flow_generate_up_to_80_credits_per_episode": true,
+    "publish_to_configured_page": true,
+    "select_family_topics": true,
+    "buy_credits": false,
+    "install_components_without_proposal_approval": false,
+    "enable_schedule_before_pilot_verification": false,
+    "read_or_store_credentials": false
+  }
+}

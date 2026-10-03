@@ -1,0 +1,19 @@
+# Không đưa media, model, môi trường lên repo — chúng nằm ở máy (D:\PODCAST TU DONG)
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.png
+*.jpg
+*.jpeg
+*.zip
+*.pdf
+*.docx
+python-env/
+models/
+ffmpeg/
+__pycache__/
+*.pyc
+.env
+*.secret
+STOP.now

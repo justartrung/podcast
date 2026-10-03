@@ -1,0 +1,90 @@
+{
+  "checked_at": "2026-09-30T16:16:14+07:00",
+  "channels": [
+    {
+      "name": "Giang Ơi",
+      "platform": "YouTube",
+      "example_urls": [
+        "https://www.youtube.com/watch?v=OT2sO9tk0HY",
+        "https://www.youtube.com/watch?v=QSF6_ewrgkE"
+      ]
+    },
+    {
+      "name": "Góc khuất hôn nhân",
+      "platform": "TikTok",
+      "example_urls": [
+        "https://www.tiktok.com/@linh_chuyennam/video/7687012557705596180"
+      ]
+    },
+    {
+      "name": "Hana Giang Anh",
+      "platform": "YouTube",
+      "example_urls": [
+        "https://www.youtube.com/watch?v=7qaxeRb3mBo"
+      ]
+    },
+    {
+      "name": "MCVMedia",
+      "platform": "YouTube",
+      "example_urls": [
+        "https://www.youtube.com/watch?v=hQhAy3KLc3M"
+      ]
+    },
+    {
+      "name": "Quân Dc - Hôn Nhân",
+      "platform": "Facebook",
+      "example_urls": [
+        "https://www.facebook.com/photo/?fbid=122193600986909284"
+      ]
+    },
+    {
+      "name": "The Present Writer",
+      "platform": "YouTube",
+      "example_urls": [
+        "https://www.youtube.com/watch?v=wm64Of7PI8g"
+      ]
+    },
+    {
+      "name": "Thấy Hay Thì Chia Sẻ",
+      "platform": "TikTok",
+      "example_urls": [
+        "https://www.tiktok.com/@dangchualanh93/video/7658263149006621959"
+      ]
+    },
+    {
+      "name": "VỢ CHỒNG SON",
+      "platform": "YouTube",
+      "example_urls": [
+        "https://www.youtube.com/watch?v=uTdreX3rm0o"
+      ]
+    },
+    {
+      "name": "XIN LỖI- BIẾT ƠN",
+      "platform": "TikTok",
+      "example_urls": [
+        "https://www.tiktok.com/@nhan.pham.363626/video/7690122130175855893"
+      ]
+    },
+    {
+      "name": "Để hôn nhân hạnh phúc hơn",
+      "platform": "Facebook",
+      "example_urls": [
+        "https://www.facebook.com/photo/?fbid=122103661323490016"
+      ]
+    },
+    {
+      "name": "Đọc để HIỂU mình",
+      "platform": "TikTok",
+      "example_urls": [
+        "https://www.tiktok.com/@nhung.dailyy/video/7656857902287686932"
+      ]
+    }
+  ],
+  "searches": [
+    "hôn nhân gia đình (TikTok)",
+    "chia sẻ việc nhà (Facebook: kết quả không phù hợp, loại)",
+    "tiền trong hôn nhân (Facebook)",
+    "YouTube hôn nhân, nuôi con, tài chính gia đình"
+  ],
+  "paid_services_used": false
+}
