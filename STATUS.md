@@ -1,7 +1,7 @@
 # STATUS — Trạng thái hiện tại
 
 > **Đọc file này đầu tiên mỗi phiên.** Cập nhật cuối mỗi phiên.
-> Cập nhật lần cuối: **2026-10-03 23:50 (+07:00)** — Claude, phiên 1.
+> Cập nhật lần cuối: **2026-10-04 00:05 (+07:00)** — Claude, phiên 1.
 
 ## Tổng quan
 | Mục | Giá trị |
@@ -10,7 +10,7 @@
 | Cách chạy | **Tự làm + đăng 1 tập/ngày, hẹn 19:30** (chủ quyết 03/10 18:11). Quy trình: `docs/13-quy-trinh-hang-ngay.md`. Làm được 3–4 tập/ngày → hỏi chủ; thừa → xếp ngày sau |
 | STOP | Tắt |
 | Lịch tự động | Scheduled task **`trig_016kmh28YVBq6Egve1K2mdny`** — mỗi ngày **13:47** (giờ VN), model Sonnet 5.5, tự duyệt; làm 1 tập + hẹn đăng 19:30; cần máy bật, app Claude mở, Flow/FB còn đăng nhập. Lần đầu: 04/10 13:47 |
-| Cài đặt chạy không hỏi phép (`docs/13`) | ✅ B1 Allow thư mục · ✅ B2 Downloads → `D:\PODCAST VAN HANH\tai-ve` (Claude kiểm 23:50: file cũ đã chuyển sang) · ⏳ B3 Claude in Chrome (23:50 chưa thấy trình duyệt nào kết nối) · ✅ B4 luôn cho phép site (chủ báo 23:46) |
+| Cài đặt chạy không hỏi phép (`docs/13`) | ✅ đủ 4 bước: Allow thư mục · Downloads → `D:\PODCAST VAN HANH\tai-ve` · Claude in Chrome (hồ sơ Chrome **PODCAST**, đã đăng nhập FB; thử tải video lên composer thành công 04/10 00:0x) · luôn cho phép site |
 | Giai đoạn hiện tại | **5 — vận hành hằng ngày**. MT-0001 đã lên Page 03/10 19:30 |
 | Tool video | Flow `…/project/f37b741b-b3f2-40f8-b490-f23f79b098ed/tool/6dae8db1-89cf-475a-9412-3334f68ebfdd` |
 | Thư mục ghi | `D:\PODCAST VAN HANH` (`docs/10`). Mọi tải về để ổ D (ổ C đầy) |
@@ -18,7 +18,7 @@
 | Tập đã đăng (bởi Claude) | **1** — MT-0001 03/10 19:30 (Reel, Public), chủ xác nhận đã lên |
 
 ## Đang chặn (blockers)
-1. **Tải video lên Facebook cần Claude in Chrome** (bước 3 docs/13, chủ chưa làm) — trình duyệt app Claude không tự chọn file được. Chưa có Chrome → lượt 13:47 làm video xong sẽ lưu Drafts và nhắn chủ chọn file.
+1. ✅ Đã gỡ: tải video lên Facebook bằng Claude in Chrome (chặn hộp thoại + `file_upload` từ file đã stage) — `docs/13` bước 4.2. Lượt chạy thật đầu tiên: 04/10 13:47. Điều kiện: máy bật, app Claude mở, **cửa sổ Chrome PODCAST mở**.
 2. ✅ MT-0001 **đã lên Page** (chủ xác nhận 22:29). Phiên 04/10 ghi permalink + số liệu đầu.
 
 ⚠️ Page **đã có** bài cùng chủ đề MT-0001 (30/09) và MT-0002 cũ (01/10) do Codex/chủ đăng trước. Chủ chọn vẫn đăng MT-0001 bản mới. MT-0002 cũ hủy. Số liệu: `nghien-cuu/so-lieu-page-2026-10-03.md`.
@@ -35,10 +35,9 @@
 - Hậu kỳ: `D:\PODCAST VAN HANH\cong-cu\hauky.py` (bản sao `cong-cu/hauky.py`): analyze → cut → asr → srt → render. FFmpeg 4.4.2 (shell Linux) + faster-whisper trên D:.
 
 ## Việc tiếp theo
-1. Chủ: cài Claude in Chrome + đăng nhập FB trong Chrome (B3) — bước duy nhất còn thiếu để đăng tự động hoàn toàn.
-2. 04/10 13:47: lượt tự động làm MT-0002 (ý I03, ảnh 2) theo `docs/13`, hẹn 19:30; trước đó kiểm Scheduled/Drafts xem lượt chạy thử 03/10 có để lại bài/clip MT-0002 không (không tạo trùng, không tiêu credit lại).
-3. Ghi permalink + số liệu MT-0001 (Content → Published).
-4. Còn chờ: Q4 (repo private?), Q7 (TikTok/YT).
+1. 04/10 13:47: lượt tự động làm MT-0002 (ý I03, ảnh 2) theo `docs/13`, hẹn 19:30; trước đó kiểm Scheduled/Drafts xem lượt chạy thử 03/10 có để lại bài/clip MT-0002 không (không tạo trùng, không tiêu credit lại).
+2. Ghi permalink + số liệu MT-0001 (Content → Published).
+3. Còn chờ: Q4 (repo private?), Q7 (TikTok/YT).
 
 ## Lịch sử phiên
 - 2026-10-03: Khởi tạo repo; chủ quyết định bỏ cổng pilot, chạy theo lệnh, Claude thay Codex → [nhat-ky/2026-10-03.md](nhat-ky/2026-10-03.md)

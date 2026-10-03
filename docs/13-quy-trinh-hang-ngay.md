@@ -3,10 +3,10 @@
 Áp dụng từ 04/10/2026 theo quyết định chủ 03/10 18:11–18:21 (`docs/08`). Mỗi ngày một phiên (scheduled task hoặc chủ ra lệnh) làm **trọn 1 tập** và **hẹn đăng 19:30 cùng ngày** (nếu đã quá 19:10 thì hẹn 19:30 ngày kế tiếp còn trống).
 
 ## Chạy không hỏi phép — cài đặt một lần (chủ làm)
-Chế độ tự duyệt của tác vụ KHÔNG bỏ qua được quyền thư mục/xóa file của Windows và quyền mở trang của trình duyệt. Để lượt 13:47 không dừng (tình trạng 03/10 23:50: **B1 ✅, B2 ✅, B4 ✅**, B3 chờ chủ):
+Chế độ tự duyệt của tác vụ KHÔNG bỏ qua được quyền thư mục/xóa file của Windows và quyền mở trang của trình duyệt. Để lượt 13:47 không dừng (tình trạng 03/10 23:50: **B1–B4 ✅ đủ** (Chrome hồ sơ PODCAST kết nối 03/10 23:56, thử tải video lên thành công)):
 1. Lần đầu tác vụ hỏi **"Allow this scheduled task to access this folder on every run?"** cho `D:\PODCAST TU DONG`, `D:\PODCAST VAN HANH` (và Downloads) → bấm **Allow** (nhớ cho mọi lần sau).
 2. **Chuyển thư mục Downloads của Windows sang ổ D**: File Explorer → chuột phải *Downloads* → Properties → tab **Location** → nhập `D:\PODCAST VAN HANH\tai-ve` → Move → Yes. (Ổ C nhẹ hơn; Claude không cần xin quyền xóa ở ổ C.)
-3. Cài **Claude in Chrome**, đăng nhập Facebook trong Chrome, cho phép tiện ích chạy trên `business.facebook.com` (luôn cho phép).
+3. Cài **Claude in Chrome** trong **hồ sơ Chrome riêng "PODCAST"** (không đăng nhập Gmail; tách khỏi các hồ sơ Gmail khác của chủ), đăng nhập Facebook trong hồ sơ đó. Hằng ngày trước 13:47 để cửa sổ Chrome PODCAST mở.
 4. Trong trình duyệt app Claude, khi hỏi mở `flow.google.com` / `*.scf.usercontent.goog` / `business.facebook.com` → chọn **luôn cho phép**.
 **Claude không bao giờ xóa file** trong lượt tự động (mọi lệnh rm sẽ bật hộp hỏi quyền).
 
@@ -45,8 +45,28 @@ Chạy với `PYTHONPATH="$HOME/mnt/PODCAST VAN HANH/cong-cu/pylib"`:
 ## 4. Hẹn đăng (≈ 5 phút)
 Meta Business Suite `https://business.facebook.com/latest/composer/?asset_id=1239630805911166` → **Create post** (không dùng Create reel riêng). **Ưu tiên làm bước này trong Chrome qua Claude in Chrome** (có `file_upload`); trình duyệt app Claude không tải file lên được.
 1. Post to = Chuyện đời cùng Minh Thư. Bấm vào ô **Text** → dán caption.
-2. **Video:** dùng `find`/`read_page` tìm ô `input[type=file]` (đừng bấm nút "Add photo/video" — sẽ mở hộp thoại Windows không điều khiển được) → `file_upload` với `final-fb.mp4` (≤ 10 MB: render lại `-b:v 2200k -maxrate 2500k -bufsize 5000k -b:a 128k`). Chờ ô xem trước bên phải hiện video.
-   - Không có Claude in Chrome → nhắn chủ chọn file (chờ ≤ 30 phút), quá thì lưu **Finish later** (Drafts) và báo.
+2. **Video — cách đã chạy thử thành công 04/10 00:0x (Claude in Chrome, hồ sơ Chrome "PODCAST"):**
+   a. `list_connected_browsers` phải có 1 trình duyệt (Windows). `tabs_context_mcp{createIfEmpty:true}` → `navigate` tới URL composer ở trên.
+   b. Trang **không có sẵn** `input[type=file]`; nút "Add photo/video" tạo input tạm rồi mở hộp thoại Windows. Chặn hộp thoại bằng `javascript_tool` **trước khi bấm**:
+      ```js
+      if (!window.__origClick) window.__origClick = HTMLInputElement.prototype.click;
+      HTMLInputElement.prototype.click = function () {
+        if (this.type === 'file') {
+          this.id = 'claude-file-input';
+          this.style.cssText = 'position:fixed;top:0;left:0;width:200px;height:40px;opacity:1;z-index:99999';
+          if (!this.isConnected) document.body.appendChild(this);
+          return;
+        }
+        return window.__origClick.call(this);
+      };
+      ```
+   c. `find` "Add photo/video button" → bấm bằng ref. Kiểm `document.querySelectorAll('input[type=file]').length === 1` (accept `.jpg,.png,…,video/*`).
+   d. `find` "file input" → lấy ref (hiện dạng `button type="file"` ở góc trên trái).
+   e. `file_upload` **chỉ nhận file trong phiên** — đường dẫn `D:\...` bị từ chối. Làm: `device_stage_files` file `D:\PODCAST VAN HANH\san-sang-dang\MT-xxxx\final-fb.mp4` → dùng `stagedPath` (`/mnt/user-data/uploads/PODCAST VAN HANH/san-sang-dang/MT-xxxx/final-fb.mp4`) cho `file_upload`.
+   f. Chờ "Uploading media" → "Processing media" → xem trước hiện video, có dòng "Publish your video as a reel" (≈ 15–30 s). Media hiện "1080 × 1920 · 0:30 secs".
+   g. `final-fb.mp4` ≤ 10 MB: `ffmpeg -i final.mp4 -c:v libx264 -preset fast -b:v 2200k -maxrate 2500k -bufsize 5000k -pix_fmt yuv420p -c:a aac -b:a 128k -movflags +faststart final-fb.mp4` (MT-0001: 20,3 MB → 8,9 MB).
+   - Đóng tab composer chưa đăng có thể bật hộp "Rời trang?" làm treo tiện ích → xóa media (thùng rác) trước, hoặc chạy `window.addEventListener('beforeunload', e => e.stopImmediatePropagation(), true)` rồi mới `tabs_close_mcp`.
+   - Không có Chrome → nhắn chủ chọn file (chờ ≤ 30 phút), quá thì lưu **Finish later** (Drafts) và báo.
 3. **Hẹn giờ 19:30 (cách đã chạy được 03/10):**
    a. Kéo xuống mục **Schedule** → bật công tắc **Set date and time**. Ô ngày mặc định = hôm nay (đổi nếu xếp ngày khác).
    b. Ô giờ hiện `00:00` và báo đỏ — bình thường. **Gõ số không ăn**; chỉ dùng phím mũi tên.
