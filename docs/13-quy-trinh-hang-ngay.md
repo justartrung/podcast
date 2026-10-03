@@ -3,7 +3,7 @@
 Áp dụng từ 04/10/2026 theo quyết định chủ 03/10 18:11–18:21 (`docs/08`). Mỗi ngày một phiên (scheduled task hoặc chủ ra lệnh) làm **trọn 1 tập** và **hẹn đăng 19:30 cùng ngày** (nếu đã quá 19:10 thì hẹn 19:30 ngày kế tiếp còn trống).
 
 ## Chạy không hỏi phép — cài đặt một lần (chủ làm)
-Chế độ tự duyệt của tác vụ KHÔNG bỏ qua được quyền thư mục/xóa file của Windows và quyền mở trang của trình duyệt. Để lượt 13:47 không dừng:
+Chế độ tự duyệt của tác vụ KHÔNG bỏ qua được quyền thư mục/xóa file của Windows và quyền mở trang của trình duyệt. Để lượt 13:47 không dừng (tình trạng 03/10 23:50: **B1 ✅, B2 ✅**, B3–B4 chờ chủ):
 1. Lần đầu tác vụ hỏi **"Allow this scheduled task to access this folder on every run?"** cho `D:\PODCAST TU DONG`, `D:\PODCAST VAN HANH` (và Downloads) → bấm **Allow** (nhớ cho mọi lần sau).
 2. **Chuyển thư mục Downloads của Windows sang ổ D**: File Explorer → chuột phải *Downloads* → Properties → tab **Location** → nhập `D:\PODCAST VAN HANH\tai-ve` → Move → Yes. (Ổ C nhẹ hơn; Claude không cần xin quyền xóa ở ổ C.)
 3. Cài **Claude in Chrome**, đăng nhập Facebook trong Chrome, cho phép tiện ích chạy trên `business.facebook.com` (luôn cho phép).
@@ -12,7 +12,9 @@ Chế độ tự duyệt của tác vụ KHÔNG bỏ qua được quyền thư m
 
 ## 0. Kiểm tra trước (dừng & báo chủ nếu thiếu)
 - Đọc `STATUS.md`, `docs/04`, `docs/08`, nhật ký mới nhất. STOP tắt?
-- Máy chủ đang kết nối (công cụ remote-devices có mặt), thư mục `D:\PODCAST VAN HANH` ghi được.
+- Máy chủ đang kết nối (công cụ remote-devices có mặt), thư mục `D:\PODCAST VAN HANH` ghi được. Downloads = `$HOME/mnt/PODCAST VAN HANH/tai-ve` (file Flow tải về rơi vào đây; trong đó có sẵn file riêng của chủ — chỉ đụng file video mới tải).
+- Claude in Chrome: `list_connected_browsers` có trình duyệt không → có thì đăng bằng Chrome; không thì theo nhánh dự phòng ở bước 4.2.
+- Có bài/clip MT-xxxx dở từ lượt trước (Drafts, `san-xuat/MT-xxxx/clip-goc`, ledger)? → làm tiếp, không tạo lại.
 - Hàng chờ đăng: trong Business Suite → Content → **Scheduled** đã có bài cho 19:30 hôm nay chưa? Có rồi → chỉ làm tập để xếp hàng ngày kế tiếp.
 - Số credit Flow ≥ 80 (xem bảng tài khoản). Không mua credit.
 
