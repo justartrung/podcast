@@ -14,11 +14,11 @@
 | Tool video | Flow `…/project/f37b741b-b3f2-40f8-b490-f23f79b098ed/tool/6dae8db1-89cf-475a-9412-3334f68ebfdd` |
 | Thư mục ghi | `D:\PODCAST VAN HANH` (`docs/10`). Mọi tải về để ổ D (ổ C đầy) |
 | Duyệt đăng | MT-0001 chủ đã duyệt (18:11). Từ tập sau Claude tự duyệt & hẹn đăng |
-| Tập đã đăng (bởi Claude) | MT-0001 **đã hẹn** 03/10 19:30 (Reel, Public) — chờ xác minh sau 19:30 |
+| Tập đã đăng (bởi Claude) | **1** — MT-0001 03/10 19:30 (Reel, Public), chủ xác nhận đã lên |
 
 ## Đang chặn (blockers)
 1. **Tải video lên Facebook cần chọn file trong hộp thoại Windows** — trình duyệt app Claude không tự chọn được; điều khiển máy tính không với tới hộp thoại của app Claude. Hướng giải: chủ cài **Claude in Chrome** + đăng nhập Facebook trong Chrome → Claude dùng `file_upload` (≤ 10 MB/file). Tạm thời: nhờ chủ chọn file mỗi ngày.
-2. **Chưa xác minh MT-0001 đã lên Page**: lúc 19:41 máy chủ mất kết nối với phiên Claude → kiểm lại ở phiên 04/10 (hoặc chủ xem Page).
+2. ✅ MT-0001 **đã lên Page** (chủ xác nhận 22:29). Phiên 04/10 ghi permalink + số liệu đầu.
 
 ⚠️ Page **đã có** bài cùng chủ đề MT-0001 (30/09) và MT-0002 cũ (01/10) do Codex/chủ đăng trước. Chủ chọn vẫn đăng MT-0001 bản mới. MT-0002 cũ hủy. Số liệu: `nghien-cuu/so-lieu-page-2026-10-03.md`.
 
