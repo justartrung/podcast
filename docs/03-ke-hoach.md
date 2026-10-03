@@ -13,26 +13,27 @@
 ## Giai đoạn 1 — Chuyển giao "đầu não" sang Claude
 - [ ] Thử built-in browser / Claude in Chrome: mở được Page Facebook dưới danh tính Page (chủ đăng nhập)
 - [x] Chốt môi trường hậu kỳ (Q3): FFmpeg trong shell Linux của Claude, faster-whisper cài vào D: (`docs/10`)
-- [ ] Cài faster-whisper vào `D:\PODCAST VAN HANH\cong-cu`, thử ASR + burn phụ đề tiếng Việt
+- [x] Cài faster-whisper vào `D:\PODCAST VAN HANH\cong-cu`, thử ASR + burn phụ đề tiếng Việt
 - [x] Chốt nơi lưu media: `D:\PODCAST VAN HANH` (Q2)
-- [ ] Chủ tạo thư mục `D:\PODCAST VAN HANH`, Claude được cấp quyền
+- [x] Chủ tạo thư mục `D:\PODCAST VAN HANH`, Claude được cấp quyền
 - [ ] Viết lại checklist "ledger credit" + "chống đăng trùng" dạng file trên GitHub (thay `quan-ly.py` ghi vào D:)
 
 ## Giai đoạn 2 — Tool video (nút thắt chính)
 - [x] **Nhận tool video từ chủ**: Flow tool `6dae8db1…` (03/10 17:12)
-- [ ] Chủ đăng nhập Gmail trong trình duyệt của app Claude
-- [ ] Mở tool bằng **tab mới** (lỗi "Không chạy được công cụ" là do tab Codex — `docs/09`), xác nhận chạy được
-- [ ] Ghi lại thật: model, giây/cảnh, giá x1, credit còn, cách dán thoại, cách chọn ảnh host
-- [ ] Tìm bộ chọn **giọng** (Character voice): nghe mẫu nữ Bắc, ghi tên/ID
-- [ ] Lập phương án ngân sách MT-0001 ≤ 80 credit (gồm 1 lần tạo lại)
+- [x] Chủ đăng nhập Gmail trong trình duyệt của app Claude
+- [x] Mở tool bằng **tab mới** (lỗi "Không chạy được công cụ" là do tab Codex — `docs/09`), xác nhận chạy được
+- [x] Ghi lại thật: model, giây/cảnh, giá x1, credit còn, cách dán thoại, cách chọn ảnh host
+- [x] Giọng: tool không có bộ chọn giọng → dùng mô tả chữ; kiểm bằng ASR + cao độ (F0 ~172–208 Hz, ổn định)
+- [x] Lập phương án ngân sách MT-0001 ≤ 80 credit (gồm 1 lần tạo lại)
 
 ## Giai đoạn 3 — Tập đầu tiên MT-0001 (chạy khi chủ ra lệnh)
 > 03/10: bỏ cổng pilot — đây là tập bình thường, không mở khóa gì.
-- [ ] Tạo cảnh 1 → nghe/xem → đạt
-- [ ] Tạo các cảnh còn lại (4 cảnh dự kiến), tải clip, ghi hash + mã lượt
-- [ ] Cắt ghép theo audio thật → ASR → nghe sửa → SRT → burn phụ đề
-- [ ] Chèn thumbnail 1 s, dịch audio/SRT +1 s
-- [ ] **Claude QA** đủ 13 mục, gắn SHA-256 master → **chủ xem & duyệt tập đầu**
+- [x] Tạo cảnh 1 → nghe/xem → đạt
+- [x] Tạo các cảnh còn lại (4 cảnh dự kiến), tải clip, ghi hash + mã lượt
+- [x] Cắt ghép theo audio thật → ASR → nghe sửa → SRT → burn phụ đề
+- [x] Chèn thumbnail 1 s, dịch audio/SRT +1 s
+- [x] **Claude QA** đủ 13 mục, gắn SHA-256 master
+- [ ] **Chủ xem & duyệt tập đầu**
 - [ ] Đăng Page (giờ theo lệnh của chủ) → mở permalink, phát được, chụp màn hình → `da-dang-xac-minh`
 - [ ] Ghi kết quả chọn ảnh bìa Facebook (được/không)
 
