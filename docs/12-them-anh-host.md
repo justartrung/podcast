@@ -18,3 +18,11 @@
 - Một tập = một ảnh, khóa suốt tập (cả khi tạo lại).
 - Ảnh gốc `D:\PODCAST TU DONG\02-host\1–4.png` không sửa; ảnh mới chỉ để ở `D:\PODCAST VAN HANH\host\`.
 - Đổi vòng xoay không áp ngược cho tập đã có kịch bản/clip trừ khi chủ nói.
+
+## Đổi trang phục tự động (đề xuất 04/10/2026 — **chờ thử lần đầu** trước khi bật)
+Chủ không cần tự làm ảnh host mới hay đặt tên file:
+1. Chủ thả ảnh **mẫu quần áo** (chụp/tải về, 1 bộ/ảnh, tên gì cũng được) vào `D:\PODCAST VAN HANH\host\trang-phuc\`. Có thể kèm 1 dòng trong tên file nếu muốn dùng cho chủ đề nào (vd `ao-dai-tet.jpg`).
+2. Mỗi lượt hằng ngày: nếu `trang-phuc\` còn mẫu chưa dùng → lấy mẫu cũ nhất → trong Flow tạo **ảnh host mới = ảnh host theo vòng xoay (giữ nguyên mặt, tóc, bối cảnh) + mặc bộ đó** → QA (mặt giống ảnh gốc, tay/cổ không méo, không chữ/logo, 9:16) → lưu `host\N.png` + sha256 vào `host/README.md` → dời mẫu sang `trang-phuc\da-dung\` (mv, không xóa) → dùng cho tập.
+3. Không có mẫu mới → dùng ảnh theo vòng xoay như cũ.
+4. Credit tạo ảnh tính vào trần 80/tập; thấy giá thật mới bấm. QA mặt không đạt sau 1 lần tạo lại → dùng ảnh cũ, báo chủ.
+Trước khi bật: Claude thử với mẫu đầu tiên chủ gửi (giá, độ giống mặt), gửi ảnh cho chủ duyệt.
