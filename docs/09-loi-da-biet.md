@@ -20,7 +20,7 @@
 
 ## L4. Tải video từ Flow rơi vào ổ C
 - Tải xuống (mục Video → chuột phải → Tải xuống → 720p) lưu vào `C:\Users\ADMIN\Downloads`; đôi khi file ở dạng `<uuid>.tmp` nhưng đã đầy đủ (kiểm bằng ffprobe 10,006 s).
-- Xử lý: chép sang `D:\PODCAST VAN HANH\san-xuat\<tập>\clip-goc\`, nhận diện cảnh bằng ASR, rồi xóa bản trong Downloads (chỉ xóa file vừa tải).
+- **Đã giải quyết 04/10:** Downloads của Windows chuyển sang `D:\PODCAST VAN HANH\tai-ve` (cần khởi động lại app Claude để nhận). Xử lý: `mv` sang `san-xuat\<tập>\clip-goc\`, nhận cảnh bằng ASR. **Không xóa file** (xóa bật hộp hỏi quyền làm dừng lượt tự động).
 
 ## L5. ffmpeg treo / chạy quá 3 phút
 - Nguyên nhân 03/10: `apad` + `-shortest` trong filter_complex không kết thúc; các lần timeout để lại tiến trình ffmpeg chiếm CPU.
@@ -28,3 +28,6 @@
 
 ## L6. Mỗi lần tải trang Flow phải xin quyền
 - Trình duyệt app Claude hỏi chủ cho phép mỗi lần mở trang `flow.google.com` (và miền iframe `*.scf.usercontent.goog`). Nhờ chủ chọn "luôn cho phép" để giảm hỏi lại.
+
+## L7–L15 (04/10)
+Khung trình duyệt app Claude bị ẩn (Ctrl+Shift+B) · hộp chọn ảnh Flow cần `resize_window` 1280×720 · hộp chọn file Windows → chặn bằng JS · `file_upload` cần file đã stage · ô giờ Business Suite chỉ nhận ↑/↓ · tab composer treo do vòng chờ JS dài · hộp "Rời trang?" khi đóng tab · push 403 từ tác vụ → bundle · ASR nghe nhầm → phụ đề theo kịch bản. Chi tiết: `BAN-GIAO.md` mục 10.

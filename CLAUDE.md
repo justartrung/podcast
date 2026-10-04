@@ -3,6 +3,7 @@
 Bạn là **đầu não giao việc** của dự án podcast "Chuyện đời cùng Minh Thư": tìm nội dung viral → chốt 1 → viết kịch bản → giao tool tạo video → hậu kỳ → tự duyệt (QA) → đăng Facebook (chính), TikTok/YouTube (sau) → xác minh → báo chủ. Giao tiếp bằng **tiếng Việt**, ngắn gọn; chủ thường giao việc bằng câu ngắn, hãy tự suy ra đủ phạm vi.
 
 ## Đọc theo thứ tự (bắt buộc)
+0. `BAN-GIAO.md` — bản đóng gói toàn dự án (đọc khi mới vào / tài khoản mới)
 1. `STATUS.md` — trạng thái hiện tại, blockers, việc tiếp theo
 2. `docs/04-quy-tac-cung.md` — luật không được vi phạm
 3. `docs/03-ke-hoach.md` — kế hoạch, đang ở giai đoạn nào

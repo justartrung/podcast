@@ -1,7 +1,7 @@
 # STATUS — Trạng thái hiện tại
 
 > **Đọc file này đầu tiên mỗi phiên.** Cập nhật cuối mỗi phiên.
-> Cập nhật lần cuối: **2026-10-04 14:52 (+07:00)** — Claude (thêm docs/14 lời nói tự nhiên; đề xuất đổi trang phục tự động).
+> Cập nhật lần cuối: **2026-10-04 15:10 (+07:00)** — Claude (đóng gói `BAN-GIAO.md` cho tài khoản Claude mới).
 
 ## Tổng quan
 | Mục | Giá trị |
@@ -45,7 +45,8 @@
 4. Permalink + số liệu MT-0001 chưa ghi đủ; sau 19:30 hằng ngày kiểm bài mới lên.
 5. Chủ dọn 5 clip MT-0003 còn ở `C:\Users\ADMIN\Downloads` (Downloads mới đã về `tai-ve` từ lượt 04/10).
 6. Chủ gửi mẫu quần áo (sau) → Claude thử tạo ảnh host mặc bộ mới trong Flow, báo giá, gửi chủ duyệt → bật đổi trang phục tự động.
-7. Còn chờ: Q4 (repo private?), Q7 (TikTok/YT).
+7. **Chuyển sang tài khoản Claude mới:** làm theo `BAN-GIAO.md` mục 11 (tắt tác vụ cũ trước khi bật tác vụ mới).
+8. Còn chờ: Q4 (repo private?), Q7 (TikTok/YT).
 
 ## Lịch sử phiên
 - 2026-10-03: Khởi tạo repo; chủ quyết định bỏ cổng pilot, chạy theo lệnh, Claude thay Codex → [nhat-ky/2026-10-03.md](nhat-ky/2026-10-03.md)

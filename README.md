@@ -1,3 +1,5 @@
+> **Mới vào (hoặc tài khoản Claude mới)? Đọc [`BAN-GIAO.md`](BAN-GIAO.md) trước.**
+
 # 🎙️ Podcast tự động — "Chuyện đời cùng Minh Thư"
 
 Repo quản lý dự án podcast chuyện gia đình, host AI **MINH THƯ**, đăng chính trên Facebook Page [Chuyện đời cùng Minh Thư](https://www.facebook.com/chuyendoicungminhthu).

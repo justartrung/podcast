@@ -151,7 +151,7 @@ def render(tap, thumb, outdir):
           "[t][c]concat=n=2:v=1:a=0[v];"
           "[1:a]aresample=48000,adelay=1000|1000[a]")
     run(['ffmpeg', '-v', 'error', '-y', '-loop', '1', '-framerate', '30', '-t', '1.2', '-i', thumb, '-i', src,
-         '-filter_complex', fc, '-map', '[v]', '-map', '[a]', '-c:v', 'libx264', '-preset', 'fast', '-crf', '18', '-r', '30',
+         '-filter_complex', fc, '-map', '[v]', '-map', '[a]', '-c:v', 'libx264', '-preset', 'medium', '-crf', '18', '-r', '30',
          '-c:a', 'aac', '-b:a', '192k', '-ar', '48000', '-ac', '2', '-shortest', '-movflags', '+faststart', final])
     txt = open(s).read()
     def sh(m):
