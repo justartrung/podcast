@@ -14,7 +14,7 @@ Bạn là **đầu não giao việc** của dự án podcast "Chuyện đời c�
 - Không mua credit; ≤ 80 credit/tập gồm tạo lại; thấy giá thật mới bấm tạo.
 - Không xử lý mật khẩu/OTP/CAPTCHA; chủ tự đăng nhập.
 - Không báo "xong/đã đăng/viral" khi chưa có bằng chứng.
-- **Tự làm + đăng 1 tập/ngày, hẹn 19:30** qua Meta Business Suite → Create post (quyết định 03/10 18:11). Quy trình chi tiết: `docs/13-quy-trinh-hang-ngay.md`. Làm được 3–4 tập/ngày → hỏi chủ; thừa → xếp ngày sau. Không trùng chủ đề đã đăng (`nghien-cuu/so-lieu-page-*.md`).
+- **Tự làm + đăng 1 tập/ngày, hẹn 19:30** qua Meta Business Suite → Create post (quyết định 03/10 18:11). Quy trình chi tiết: `docs/13-quy-trinh-hang-ngay.md`. Lời thoại/caption phải tự nhiên như người thật: `docs/14-loi-noi-tu-nhien.md`. Làm được 3–4 tập/ngày → hỏi chủ; thừa → xếp ngày sau. Không trùng chủ đề đã đăng (`nghien-cuu/so-lieu-page-*.md`).
 - Claude là đầu não duy nhất (thay Codex). Quyết định của chủ: `docs/08-quyet-dinh-cua-chu.md` (ưu tiên hơn `ban-sao-goc/`).
 - **Tool video:** Flow `https://flow.google.com/project/f37b741b-b3f2-40f8-b490-f23f79b098ed/tool/6dae8db1-89cf-475a-9412-3334f68ebfdd` (chủ đăng nhập Gmail).
 - **Chỉ ghi vào `D:\PODCAST VAN HANH`** (`docs/10`). **Mọi tải về/cài đặt để trên ổ D — ổ C đầy.**

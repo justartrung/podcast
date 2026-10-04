@@ -45,3 +45,8 @@ Các luật khác vẫn giữ: ≤ 80 credit/tập gồm tạo lại, không mua
 > "à thôi, khi nào lịch nào đó set up được đăng lên thì tôi sẽ nhắn cho bạn để bạn push lên github"
 - Không gắn repo vào tác vụ 13:47. Tác vụ vẫn commit theo mốc trong phiên của nó; push 403 → lưu `git bundle` vào `D:\PODCAST VAN HANH\bang-chung\` (docs/13 mục 6).
 - Khi chủ nhắn (sau khi một tập đã hẹn lịch), phiên Claude có quyền push: nạp các bundle chưa push (fast-forward) → push main; nếu không có bundle thì đối chiếu Business Suite Scheduled + file trên D: rồi ghi bù.
+
+## 04/10/2026 14:34 — Lời nói tự nhiên + trang phục host mới
+> "tôi muốn update thêm quần áo host ( mẫu quần áo tối sẽ tải cho bạn ) và có 1 thứ tôi cần update là nội dung nói ( câu từ ) video nên được giống người và tự nhiên nhất, cần bạn update cái này, có thể là thêm repo viết lách câu từ nào đó trong github"
+- Lời nói: bộ quy tắc `docs/14-loi-noi-tu-nhien.md`, áp dụng từ MT-0005; tập đã hẹn giữ nguyên.
+- Trang phục host: chờ chủ gửi mẫu (tối 04/10) → quy trình `docs/12`.

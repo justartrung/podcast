@@ -21,7 +21,7 @@ Chế độ tự duyệt của tác vụ KHÔNG bỏ qua được quyền thư m
 
 ## 1. Chọn ý + kịch bản (≈ 15 phút)
 - Lấy ý điểm cao nhất còn "Sẵn sàng" trong `nghien-cuu/kho-y-tuong.md`, **không trùng chủ đề đã đăng** (`nghien-cuu/so-lieu-page-*.md`, `tap/`), không trùng mâu thuẫn tập liền trước. Hết ý → chạy 1 vòng research (`docs/07`).
-- Viết thoại **4 cảnh × ~24–26 tiếng** (10 s/cảnh Omni), câu 1 = xung đột mạnh (hook 3 giây), không chào, kết bằng 1 câu hỏi CTA. Ghi `tap/MT-xxxx.md`. Ảnh host = ((N−1) mod 4)+1.
+- Viết thoại **4 cảnh × 22–26 tiếng** (10 s/cảnh Omni), câu 1 = cảnh/câu nói thật có xung đột (hook 3 giây), không chào, kết bằng 1 câu hỏi CTA. **Bắt buộc theo `docs/14-loi-noi-tu-nhien.md`** (12 quy tắc + tự chấm 5 tiêu chí ≥ 4 trước khi tạo video). Ghi `tap/MT-xxxx.md` kèm bảng tự chấm. Ảnh host = ((N−1) mod 4)+1.
 - Thumbnail 1080×1920 (tiêu đề IN HOA 2–3 dòng, vàng ánh kim trên đen, footer COACH MINH THƯ) — dựng bằng PIL từ ảnh host (mẫu: `ban-sao-goc/scripts/thumbnail.py`, font có dấu tiếng Việt).
 
 ## 2. Tạo video trên Flow (≈ 20 phút, 60–75 credit)
@@ -40,7 +40,7 @@ Chạy với `PYTHONPATH="$HOME/mnt/PODCAST VAN HANH/cong-cu/pylib"`:
 1. `analyze <tap>` → xem lặng/ASR → viết `cat-dung/manifest.json` (đệm 0,15–0,25 s, rút lặng >0,7 s còn ~0,45 s, giữ 0,6 s cuối).
 2. `cut <tap>` → `asr <tap>` (kiểm đủ lời) → viết `phu-de/kich-ban-cue.json` (≤ ~38 ký tự/cue) → `srt <tap>` (khớp ≥ 0,9).
 3. `render <tap> <thumbnail.png> <san-sang-dang/MT-xxxx>` (≈ 1 phút; timeout → kill ffmpeg thừa, `docs/09` L5).
-4. QA: khung 29 = thumbnail, khung 30 = nội dung; 0–1 s im lặng; phụ đề ≤ 2 dòng đủ dấu; decode không lỗi; ≤ 90 s. Ghi `qa/qa-MT-xxxx.json`. Viết `caption.txt` (hook + 2–3 câu + câu hỏi + 4 hashtag, không CTA theo dõi).
+4. QA: khung 29 = thumbnail, khung 30 = nội dung; 0–1 s im lặng; phụ đề ≤ 2 dòng đủ dấu; decode không lỗi; ≤ 90 s. Ghi `qa/qa-MT-xxxx.json`. Viết `caption.txt` theo `docs/14` mục Caption (hook + 2–3 câu + câu hỏi + 4 hashtag + "(Câu chuyện minh họa.)", không CTA theo dõi).
 5. Bản cho Facebook ≤ 10 MB nếu đăng qua Claude in Chrome (xem bước 4): render thêm `final-fb.mp4` bitrate ~2,2 Mbps.
 
 ## 4. Hẹn đăng (≈ 5 phút)
