@@ -2,7 +2,7 @@
 
 > **Dành cho Claude ở tài khoản mới.** Đóng gói toàn bộ dự án tới **04/10/2026 15:00 (+07:00)**: dự án là gì, luật, tài nguyên, trạng thái, quy trình làm video trên Google Flow, hậu kỳ, hẹn đăng Facebook, chạy tự động, lỗi đã biết, và việc phải thiết lập lại trên tài khoản mới.
 > Nguồn sự thật đầy đủ là repo GitHub **`justartrung/podcast`** (công khai). File này là bản tóm tắt chi tiết; khi có mâu thuẫn, **`STATUS.md` + `docs/08` trong repo (bản mới nhất) thắng**.
-> Người viết: Claude (tài khoản cũ), phiên 03/10 16:44 → 04/10 15:00.
+> Người viết: Claude (tài khoản cũ), phiên 03/10 16:44 → 04/10 15:10. **Mục tiêu số 1 của chủ: chạy tự động hoàn toàn, không phải bấm duyệt — xem mục 10b.**
 
 ---
 
@@ -247,18 +247,40 @@ Chủ (04/10 14:34): *"nội dung nói (câu từ) video nên được giống n
 
 ---
 
+## 10b. CHẠY TỰ ĐỘNG HOÀN TOÀN — chủ không phải bấm "Allow" / duyệt gì
+Chủ (03/10 22:32, 23:34): *"nó sẽ làm tự động mà không cần hỏi phê duyệt đúng không, tại tôi muốn làm tự động hoàn toàn lúc 13:47"* · *"tôi muốn cho phép được phê duyệt tất cả mà không cần hỏi allow lại"*.
+Lượt chạy thử 03/10 bị dừng vì nhiều loại hộp hỏi khác nhau. **Mỗi loại có cách xử lý riêng** — chế độ "tự duyệt" của tác vụ chỉ bỏ được loại 1; các loại còn lại phải cài một lần hoặc tránh bằng cách làm:
+
+| # | Hộp hỏi / chỗ phải bấm | Cách bỏ | Ai làm, khi nào |
+|---|---|---|---|
+| 1 | Duyệt từng thao tác của Claude (chạy lệnh, mở trang…) | Tác vụ đặt **tự duyệt / Automatically approve** (permission mode = auto). Nếu app tạo tác vụ ở chế độ "hỏi" → vào cài đặt tác vụ bật "Automatically approve" | Chủ, 1 lần khi tạo tác vụ |
+| 2 | "Allow this scheduled task to access this folder on every run?" (`D:\PODCAST TU DONG`, `D:\PODCAST VAN HANH`) | Bấm **Allow** → nhớ cho mọi lần sau | Chủ, 1 lần ở lượt chạy đầu |
+| 3 | Hỏi quyền **xóa file** | **Không bao giờ xóa** trong lượt tự động; dùng `mv`; file rác ghi vào báo cáo | Claude (luật) |
+| 4 | Hỏi quyền **thư mục mới** | Không xin thư mục mới; Downloads đã chuyển vào `D:\PODCAST VAN HANH\tai-ve` (Properties → Location) nên clip tải về nằm sẵn trong thư mục đã cấp | Chủ đã làm 03/10; Claude (luật) |
+| 5 | Trình duyệt app Claude hỏi mở site | Chọn **"luôn cho phép"** cho `flow.google.com`, `*.scf.usercontent.goog`, `business.facebook.com` | Chủ, 1 lần/site |
+| 6 | Tiện ích Claude in Chrome hỏi quyền trên site | Cho phép **luôn** trên `business.facebook.com` (cài đặt tiện ích → quyền site) | Chủ, 1 lần |
+| 7 | Hộp chọn file Windows khi tải video lên Facebook | Chặn bằng JS + `file_upload` (mục 7 bước 4) — không cần người chọn file | Claude |
+| 8 | Ô giờ hẹn đăng / nút Schedule | Claude tự đặt 19:30 bằng phím ↑ (mục 7 bước 4) | Claude |
+| 9 | Push GitHub | Gắn repo `justartrung/podcast` vào tác vụ → tự push. Chưa gắn được → bundle trên D:, chủ nhắn Claude push (việc tay duy nhất còn lại) | Chủ gắn 1 lần nếu giao diện cho phép |
+
+**Không bỏ được bằng cài đặt — chủ giữ hằng ngày trước 13:47:** máy bật, không ngủ · app Claude mở, **khung trình duyệt đang hiện** (Ctrl+Shift+B) · **cửa sổ Chrome PODCAST mở** · Flow (Gmail MINH THƯ) và Facebook **còn đăng nhập** (hết phiên thì chủ đăng nhập lại — Claude không nhập mật khẩu/OTP).
+Khi bị chặn ở bất kỳ điểm nào: Claude làm hết phần còn lại, lưu Drafts nếu cần, và nhắn chủ **đúng 1 việc**.
+Ở tài khoản mới: các mục 1, 2, 5, 6 phải bấm lại **một lần** (xem mục 11 bước 2, 4, 5, 6).
+
+---
+
 ## 11. THIẾT LẬP LẠI TRÊN TÀI KHOẢN MỚI (checklist)
 Những thứ **không** tự sang tài khoản mới: tác vụ định kỳ, liên kết máy tính, đăng nhập tiện ích Claude in Chrome, kết nối GitHub, bộ nhớ/Project của tài khoản cũ. Những thứ **vẫn còn** (nằm trên máy/tài khoản khác): repo GitHub, mọi file trên D:, đăng nhập Facebook trong Chrome PODCAST, tài khoản Flow, Business Suite.
 
 1. **Tài khoản CŨ — tắt tác vụ hằng ngày** "Podcast Minh Thư — làm & hẹn đăng 1 tập/ngày" (`trig_016kmh28YVBq6Egve1K2mdny`, 13:47) — trong app Claude (tài khoản cũ) → Scheduled/Routines → tắt công tắc. **Bắt buộc** trước khi bật tác vụ ở tài khoản mới.
 2. **App Claude desktop:** đăng nhập tài khoản mới → liên kết máy tính → cấp quyền 2 thư mục `D:\PODCAST TU DONG` và `D:\PODCAST VAN HANH` (chọn Allow cho mọi lần).
 3. **GitHub:** kết nối GitHub (tài khoản `justartrung`) trong tài khoản Claude mới; phiên làm việc gắn repo `justartrung/podcast` **quyền push**.
-4. **Claude in Chrome:** trong **cửa sổ Chrome hồ sơ PODCAST**, bấm tiện ích Claude → đăng xuất tài khoản cũ → đăng nhập tài khoản mới; cho phép luôn trên `business.facebook.com`. Kiểm bằng `list_connected_browsers`.
+4. **Claude in Chrome:** trong **cửa sổ Chrome hồ sơ PODCAST**, bấm tiện ích Claude → đăng xuất tài khoản cũ → đăng nhập tài khoản mới; cho phép **luôn** trên `business.facebook.com` (mục 10b #6). Kiểm bằng `list_connected_browsers`.
 5. **Trình duyệt trong app Claude:** mở Flow URL — nếu bị đưa về trang giới thiệu thì chủ đăng nhập lại Gmail **trinhthu.hbl@gmail.com**; chọn "luôn cho phép" các site (L6). Mở thử Business Suite cũng được nhưng đăng bài dùng Chrome.
 6. **Tạo lại tác vụ hằng ngày** (scheduled task) ở tài khoản mới:
    - Tên: `Podcast Minh Thư — làm & hẹn đăng 1 tập/ngày`
    - Lịch: `CRON_TZ=Asia/Ho_Chi_Minh 47 13 * * *` (13:47 mỗi ngày)
-   - **Cần máy tính** (requires local device = có), tự duyệt (auto), thông báo đẩy khi xong
+   - **Cần máy tính** (requires local device = có), **tự duyệt — Automatically approve** (bắt buộc, xem mục 10b), thông báo đẩy khi xong
    - Model: chủ chọn **Sonnet 5.5** để tiết kiệm (đổi trong app)
    - **Gắn repo `justartrung/podcast`** vào tác vụ nếu giao diện cho phép (Edit → Select repositories) → tác vụ tự push được, khỏi bundle
    - Prompt: **nguyên văn Phụ lục A**
