@@ -1,7 +1,7 @@
 # STATUS — Trạng thái hiện tại
 
 > **Đọc file này đầu tiên mỗi phiên.** Cập nhật cuối mỗi phiên.
-> Cập nhật lần cuối: **2026-10-04 14:05 (+07:00)** — Claude, lượt tự động 13:47 (MT-0004 dừng ở kịch bản).
+> Cập nhật lần cuối: **2026-10-04 15:40 (+07:00)** — Claude, lượt tự động 13:47 (MT-0004 đã hẹn 06/10).
 
 ## Tổng quan
 | Mục | Giá trị |
@@ -28,7 +28,7 @@
 |---|---|---|---|---|
 | MT-0001 | Khi câu hỏi nhỏ thành lời trách | 1.png | **`da-dang`** 03/10 19:30 (chủ xác nhận) | [tap/MT-0001.md](tap/MT-0001.md) |
 | MT-0002 | Có chìa khóa, có nên tự vào? (I03) | 2.png | **`da-hen-lich` 04/10 19:30** (làm ở lượt chạy thử 03/10) | [tap/MT-0002.md](tap/MT-0002.md) |
-| MT-0004 | Một giờ nghỉ, sao khó đến vậy? (I04) | 4.png | **`kich-ban`** (chưa làm clip) — slot 06/10 19:30 | [tap/MT-0004.md](tap/MT-0004.md) |
+| MT-0004 | Một giờ nghỉ, sao khó đến vậy? (I04) | 4.png | **`da-hen-lich` 06/10 19:30** (60 credit, còn 860) | [tap/MT-0004.md](tap/MT-0004.md) |
 | MT-0003 | Ai phải nhớ mọi việc trong nhà? (I02) | 3.png | **`da-hen-lich` (60 credit, còn 870)** — hẹn 05/10 19:30 | [tap/MT-0003.md](tap/MT-0003.md) |
 
 ## Tài nguyên đã biết
@@ -37,7 +37,7 @@
 - Hậu kỳ: `D:\PODCAST VAN HANH\cong-cu\hauky.py` (bản sao `cong-cu/hauky.py`): analyze → cut → asr → srt → render. FFmpeg 4.4.2 (shell Linux) + faster-whisper trên D:.
 
 ## Việc tiếp theo
-0. **04/10 13:47 lượt tự động bị chặn:** (a) Claude in Chrome KHÔNG kết nối (`list_connected_browsers` rỗng) → không tải video lên FB được; (b) Browser pane của app Claude đang ẩn → Flow không nhận thao tác. Đã chốt ý I04 + kịch bản MT-0004 (slot 06/10 19:30). Scheduled hiện có: 04/10 & 05/10 19:30. Chủ cần: mở Chrome hồ sơ PODCAST + để app Claude hiện (không thu nhỏ) rồi chạy lại tác vụ.
+0. **04/10 lượt tự động:** MT-0004 làm xong, hẹn **06/10 19:30** (Flow còn **860**). Bị chặn lúc đầu vì Chrome chưa mở + Browser pane ẩn → chủ mở Chrome PODCAST và hiện pane (Ctrl+Shift+B) mới chạy được. Lượt kế: MT-0005 (ảnh 1, ý I05 — hợp Tết nên cân nhắc, hoặc research ý mới), hẹn 07/10 19:30. GitHub: chưa push (403) → bundle `bang-chung/podcast-MT-0004-chua-push.bundle` (cập nhật cuối).
 1. Lượt kế tiếp làm **MT-0004** (ảnh 4, ý I04), hẹn **06/10 19:30**. Flow còn ~870 credit (còn ~14 tập).
 2. Số liệu MT-0001 đã ghi (reach 217, views 271 sau ~6 giờ); permalink chưa lấy.
 3. **Tác vụ 13:47 không push được GitHub** (403: phiên tác vụ không có repo `justartrung/podcast`, không có công cụ add_repo). **Chủ quyết (04/10 01:19): không gắn repo; mỗi khi một tập đã hẹn lịch, chủ nhắn Claude push** (`docs/08`). Cách làm: tác vụ lưu `git bundle` vào `D:\PODCAST VAN HANH\bang-chung\`; phiên có quyền push nạp bundle rồi push (đã làm 04/10 01:15 với `podcast-MT-0003-chua-push.bundle` → 44a03c9).
