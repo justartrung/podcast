@@ -1,7 +1,7 @@
 # STATUS — Trạng thái hiện tại
 
 > **Đọc file này đầu tiên mỗi phiên.** Cập nhật cuối mỗi phiên.
-> Cập nhật lần cuối: **2026-10-04 14:35 (+07:00)** — Claude (push bù bundle MT-0004 do lượt tự động 13:47 tạo).
+> Cập nhật lần cuối: **2026-10-04 14:52 (+07:00)** — Claude (thêm docs/14 lời nói tự nhiên; đề xuất đổi trang phục tự động).
 
 ## Tổng quan
 | Mục | Giá trị |
@@ -12,6 +12,8 @@
 | Lịch tự động | Scheduled task **`trig_016kmh28YVBq6Egve1K2mdny`** — mỗi ngày **13:47** (giờ VN), model Sonnet 5.5, tự duyệt; làm 1 tập + hẹn đăng 19:30; cần máy bật, app Claude mở, Flow/FB còn đăng nhập. Lần đầu: 04/10 13:47 |
 | Cài đặt chạy không hỏi phép (`docs/13`) | ✅ đủ 4 bước: Allow thư mục · Downloads → `D:\PODCAST VAN HANH\tai-ve` · Claude in Chrome (hồ sơ Chrome **PODCAST**, đã đăng nhập FB; thử tải video lên composer thành công 04/10 00:0x) · luôn cho phép site |
 | Giai đoạn hiện tại | **5 — vận hành hằng ngày**. MT-0001 đã lên Page 03/10 19:30 |
+| Lời thoại | Từ **MT-0005** theo `docs/14-loi-noi-tu-nhien.md` (12 quy tắc + tự chấm ≥ 4/5 trước khi tạo video) |
+| Đổi trang phục tự động (`docs/12` mục cuối) | **CHƯA BẬT** — chờ chủ gửi mẫu quần áo vào `D:\PODCAST VAN HANH\host\trang-phuc\`, Claude thử (giá + độ giống mặt), chủ duyệt. Khi chưa bật: lượt tự động **không** dùng thư mục này, chỉ báo chủ nếu thấy có mẫu |
 | Tool video | Flow `…/project/f37b741b-b3f2-40f8-b490-f23f79b098ed/tool/6dae8db1-89cf-475a-9412-3334f68ebfdd` |
 | Thư mục ghi | `D:\PODCAST VAN HANH` (`docs/10`). Mọi tải về để ổ D (ổ C đầy) |
 | Duyệt đăng | MT-0001 chủ đã duyệt (18:11). Từ tập sau Claude tự duyệt & hẹn đăng |
@@ -37,12 +39,13 @@
 - Hậu kỳ: `D:\PODCAST VAN HANH\cong-cu\hauky.py` (bản sao `cong-cu/hauky.py`): analyze → cut → asr → srt → render. FFmpeg 4.4.2 (shell Linux) + faster-whisper trên D:.
 
 ## Việc tiếp theo
-1. Lượt 13:47 ngày 05/10 → **MT-0005** (ảnh 1), hẹn **07/10 19:30**. Kho ý tưởng chỉ còn I05 (Tết — nên để tháng 12–1) → lượt kế tiếp chạy 1 vòng research (`docs/07`) lấy ý mới.
+1. Lượt 13:47 ngày 05/10 → **MT-0005** (ảnh 1), hẹn **07/10 19:30**, thoại theo `docs/14`. Kho ý tưởng chỉ còn I05 (Tết — nên để tháng 12–1) → lượt kế tiếp chạy 1 vòng research (`docs/07`) lấy ý mới.
 2. **Điều kiện trước 13:47 (chủ):** máy bật; app Claude mở với **khung trình duyệt (Browser pane) đang hiện** (ẩn thì Ctrl+Shift+B); **cửa sổ Chrome hồ sơ PODCAST đang mở**. Thiếu 1 trong 2 → lượt 04/10 dừng ở kịch bản.
 3. GitHub: tác vụ không push được (403) → lưu `bang-chung/podcast-MT-xxxx-chua-push.bundle`; **chủ nhắn Claude push** (`docs/08` 04/10 01:19). Đã push bù MT-0003 (44a03c9) và MT-0004 (895701d).
 4. Permalink + số liệu MT-0001 chưa ghi đủ; sau 19:30 hằng ngày kiểm bài mới lên.
 5. Chủ dọn 5 clip MT-0003 còn ở `C:\Users\ADMIN\Downloads` (Downloads mới đã về `tai-ve` từ lượt 04/10).
-6. Còn chờ: Q4 (repo private?), Q7 (TikTok/YT).
+6. Chủ gửi mẫu quần áo (sau) → Claude thử tạo ảnh host mặc bộ mới trong Flow, báo giá, gửi chủ duyệt → bật đổi trang phục tự động.
+7. Còn chờ: Q4 (repo private?), Q7 (TikTok/YT).
 
 ## Lịch sử phiên
 - 2026-10-03: Khởi tạo repo; chủ quyết định bỏ cổng pilot, chạy theo lệnh, Claude thay Codex → [nhat-ky/2026-10-03.md](nhat-ky/2026-10-03.md)
