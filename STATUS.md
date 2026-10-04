@@ -1,7 +1,7 @@
 # STATUS — Trạng thái hiện tại
 
 > **Đọc file này đầu tiên mỗi phiên.** Cập nhật cuối mỗi phiên.
-> Cập nhật lần cuối: **2026-10-04 15:40 (+07:00)** — Claude, lượt tự động 13:47 (MT-0004 đã hẹn 06/10).
+> Cập nhật lần cuối: **2026-10-04 14:35 (+07:00)** — Claude (push bù bundle MT-0004 do lượt tự động 13:47 tạo).
 
 ## Tổng quan
 | Mục | Giá trị |
@@ -15,7 +15,7 @@
 | Tool video | Flow `…/project/f37b741b-b3f2-40f8-b490-f23f79b098ed/tool/6dae8db1-89cf-475a-9412-3334f68ebfdd` |
 | Thư mục ghi | `D:\PODCAST VAN HANH` (`docs/10`). Mọi tải về để ổ D (ổ C đầy) |
 | Duyệt đăng | MT-0001 chủ đã duyệt (18:11). Từ tập sau Claude tự duyệt & hẹn đăng |
-| Tập đã đăng (bởi Claude) | **1** — MT-0001 03/10 19:30 (Reel, Public), chủ xác nhận đã lên. Đã hẹn: MT-0002 04/10 19:30, MT-0003 05/10 19:30 |
+| Tập đã đăng (bởi Claude) | **1** — MT-0001 03/10 19:30 (Reel, Public), chủ xác nhận đã lên. Đã hẹn: MT-0002 04/10, MT-0003 05/10, MT-0004 06/10 (đều 19:30) |
 
 ## Đang chặn (blockers)
 1. ✅ Đã gỡ: tải video lên Facebook bằng Claude in Chrome (chặn hộp thoại + `file_upload` từ file đã stage) — `docs/13` bước 4.2. Lượt chạy thật đầu tiên: 04/10 13:47. Điều kiện: máy bật, app Claude mở, **cửa sổ Chrome PODCAST mở**.
@@ -28,21 +28,21 @@
 |---|---|---|---|---|
 | MT-0001 | Khi câu hỏi nhỏ thành lời trách | 1.png | **`da-dang`** 03/10 19:30 (chủ xác nhận) | [tap/MT-0001.md](tap/MT-0001.md) |
 | MT-0002 | Có chìa khóa, có nên tự vào? (I03) | 2.png | **`da-hen-lich` 04/10 19:30** (làm ở lượt chạy thử 03/10) | [tap/MT-0002.md](tap/MT-0002.md) |
-| MT-0004 | Một giờ nghỉ, sao khó đến vậy? (I04) | 4.png | **`da-hen-lich` 06/10 19:30** (60 credit, còn 860) | [tap/MT-0004.md](tap/MT-0004.md) |
-| MT-0003 | Ai phải nhớ mọi việc trong nhà? (I02) | 3.png | **`da-hen-lich` (60 credit, còn 870)** — hẹn 05/10 19:30 | [tap/MT-0003.md](tap/MT-0003.md) |
+| MT-0003 | Ai phải nhớ mọi việc trong nhà? (I02) | 3.png | **`da-hen-lich` 05/10 19:30** (60 credit) | [tap/MT-0003.md](tap/MT-0003.md) |
+| MT-0004 | Một giờ nghỉ, sao khó đến vậy? (I04) | 4.png | **`da-hen-lich` 06/10 19:30** (60 credit) | [tap/MT-0004.md](tap/MT-0004.md) |
 
 ## Tài nguyên đã biết
-- Flow: tài khoản **MINH THƯ (trinhthu.hbl@gmail.com)**, gói PRO; 1.050 → ~990 sau MT-0001 → ước ~930 sau MT-0002 (chưa đối chiếu số dư). Giá thật Omni 1.1 Flash 10 s = **15 credit**. Giới hạn 80/tập. Còn đủ ~16 tập.
+- Flow: tài khoản **MINH THƯ (trinhthu.hbl@gmail.com)**, gói PRO. Số dư quan sát: 1.050 (03/10) → 930 trước MT-0003 → 870 sau MT-0003 → **920 trước MT-0004** (tăng 50 qua đêm — có thể gói cộng credit định kỳ; cần đối chiếu) → **860** sau MT-0004. Giá thật Omni 1.1 Flash 10 s = **15 credit**. Giới hạn 80/tập. Còn ~14 tập.
 - Facebook: Page "Chuyện đời cùng Minh Thư" — đã đăng nhập & chuyển danh tính Page (30/09). Chưa thử đăng.
 - Hậu kỳ: `D:\PODCAST VAN HANH\cong-cu\hauky.py` (bản sao `cong-cu/hauky.py`): analyze → cut → asr → srt → render. FFmpeg 4.4.2 (shell Linux) + faster-whisper trên D:.
 
 ## Việc tiếp theo
-0. **04/10 lượt tự động:** MT-0004 làm xong, hẹn **06/10 19:30** (Flow còn **860**). Bị chặn lúc đầu vì Chrome chưa mở + Browser pane ẩn → chủ mở Chrome PODCAST và hiện pane (Ctrl+Shift+B) mới chạy được. Lượt kế: MT-0005 (ảnh 1, ý I05 — hợp Tết nên cân nhắc, hoặc research ý mới), hẹn 07/10 19:30. GitHub: chưa push (403) → bundle `bang-chung/podcast-MT-0004-chua-push.bundle` (cập nhật cuối).
-1. Lượt kế tiếp làm **MT-0004** (ảnh 4, ý I04), hẹn **06/10 19:30**. Flow còn ~870 credit (còn ~14 tập).
-2. Số liệu MT-0001 đã ghi (reach 217, views 271 sau ~6 giờ); permalink chưa lấy.
-3. **Tác vụ 13:47 không push được GitHub** (403: phiên tác vụ không có repo `justartrung/podcast`, không có công cụ add_repo). **Chủ quyết (04/10 01:19): không gắn repo; mỗi khi một tập đã hẹn lịch, chủ nhắn Claude push** (`docs/08`). Cách làm: tác vụ lưu `git bundle` vào `D:\PODCAST VAN HANH\bang-chung\`; phiên có quyền push nạp bundle rồi push (đã làm 04/10 01:15 với `podcast-MT-0003-chua-push.bundle` → 44a03c9).
-4. **Downloads:** Windows đã chuyển Location sang `tai-ve` (file cũ đã sang) nhưng app Claude vẫn tải vào `C:\Users\ADMIN\Downloads` (5 clip MT-0003 còn ở đó) → khởi động lại app Claude để nhận đường dẫn mới. Chủ dọn 5 file .mp4 ở C.
-5. Còn chờ: Q4 (repo private?), Q7 (TikTok/YT).
+1. Lượt 13:47 ngày 05/10 → **MT-0005** (ảnh 1), hẹn **07/10 19:30**. Kho ý tưởng chỉ còn I05 (Tết — nên để tháng 12–1) → lượt kế tiếp chạy 1 vòng research (`docs/07`) lấy ý mới.
+2. **Điều kiện trước 13:47 (chủ):** máy bật; app Claude mở với **khung trình duyệt (Browser pane) đang hiện** (ẩn thì Ctrl+Shift+B); **cửa sổ Chrome hồ sơ PODCAST đang mở**. Thiếu 1 trong 2 → lượt 04/10 dừng ở kịch bản.
+3. GitHub: tác vụ không push được (403) → lưu `bang-chung/podcast-MT-xxxx-chua-push.bundle`; **chủ nhắn Claude push** (`docs/08` 04/10 01:19). Đã push bù MT-0003 (44a03c9) và MT-0004 (895701d).
+4. Permalink + số liệu MT-0001 chưa ghi đủ; sau 19:30 hằng ngày kiểm bài mới lên.
+5. Chủ dọn 5 clip MT-0003 còn ở `C:\Users\ADMIN\Downloads` (Downloads mới đã về `tai-ve` từ lượt 04/10).
+6. Còn chờ: Q4 (repo private?), Q7 (TikTok/YT).
 
 ## Lịch sử phiên
 - 2026-10-03: Khởi tạo repo; chủ quyết định bỏ cổng pilot, chạy theo lệnh, Claude thay Codex → [nhat-ky/2026-10-03.md](nhat-ky/2026-10-03.md)

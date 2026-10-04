@@ -13,6 +13,7 @@ Chế độ tự duyệt của tác vụ KHÔNG bỏ qua được quyền thư m
 ## 0. Kiểm tra trước (dừng & báo chủ nếu thiếu)
 - Đọc `STATUS.md`, `docs/04`, `docs/08`, nhật ký mới nhất. STOP tắt?
 - Máy chủ đang kết nối (công cụ remote-devices có mặt), thư mục `D:\PODCAST VAN HANH` ghi được. Downloads = `$HOME/mnt/PODCAST VAN HANH/tai-ve` (file Flow tải về rơi vào đây; trong đó có sẵn file riêng của chủ — chỉ đụng file video mới tải).
+- **Khung trình duyệt của app Claude phải đang hiện** (ẩn → ảnh chụp Flow timeout, thao tác không ăn; nhắn chủ bấm Ctrl+Shift+B). Hộp chọn ảnh của Flow chỉ vẽ ra khi khung đủ rộng → `resize_window` 1280×720 trước khi chọn ảnh.
 - Claude in Chrome: `list_connected_browsers` có trình duyệt không → có thì đăng bằng Chrome; không thì theo nhánh dự phòng ở bước 4.2.
 - Có bài/clip MT-xxxx dở từ lượt trước (Drafts, `san-xuat/MT-xxxx/clip-goc`, ledger)? → làm tiếp, không tạo lại.
 - Hàng chờ đăng: trong Business Suite → Content → **Scheduled** đã có bài cho 19:30 hôm nay chưa? Có rồi → chỉ làm tập để xếp hàng ngày kế tiếp.
